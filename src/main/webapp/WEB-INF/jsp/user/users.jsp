@@ -26,7 +26,7 @@
 					<td>${user.value.nick }</td>
 					<td>${user.value.email }</td>
 					<td>
-	<a href="${user.phone }/delete">删除</a></td>
+			<a href="${user.value.phone }/delete">删除</a></td>
 				</tr>
 			</c:forEach>
 		</tbody>

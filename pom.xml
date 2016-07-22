@@ -11,7 +11,8 @@
   	<spring.version>4.1.3.RELEASE</spring.version>
   </properties>
   <dependencies>
-  	<!-- test用jar -->
+  
+  	<!-- test -->
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -95,12 +96,17 @@
     	<version>5.1.34</version>
     </dependency>
     
-    <!-- commons -->
+    <!-- 文件上传 -->
     <dependency>
     	<groupId>commons-fileupload</groupId>
     	<artifactId>commons-fileupload</artifactId>
     	<version>1.3.1</version>
     </dependency>
+	<dependency>
+	    <groupId>commons-io</groupId>
+	    <artifactId>commons-io</artifactId>
+	    <version>2.4</version>
+	</dependency>
        
     <!-- 网站流量后台管理 -->
     <dependency>
@@ -136,6 +142,8 @@
     	<artifactId>hibernate-validator</artifactId>
     	<version>5.2.0.Alpha1</version>
     </dependency>
+
+
   </dependencies>
   <build>
     <finalName>product</finalName>

@@ -17,6 +17,17 @@
     </context:component-scan>
 
     <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" />
+    
+    <!-- 拦截全局异常，跳转页面 -->
+    <bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+    	<property name="exceptionMappings">
+    		<props>
+    			<prop key="java.lang.NullPointerException">error</prop>
+    			<prop key="org.springframework.web.multipart.MaxUploadSizeExceededException">error</prop>
+    		</props>
+    	</property>
+    
+    </bean>
 
     <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix">

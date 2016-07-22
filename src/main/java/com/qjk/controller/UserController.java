@@ -3,10 +3,14 @@ package com.qjk.controller;
 import java.util.HashMap;
 import java.util.Map;
 
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -34,6 +38,9 @@ public class UserController {
 //		}
 		
 //		System.out.println("METHOD users");
+		
+		User a = null;
+		a.getAge();
 		model.addAttribute("users", list);
 		
 		return "user/users";
@@ -76,12 +83,19 @@ public class UserController {
 		}
 		list.put(phone, user);
 		
-		return "redirect:user/users";
+		return "redirect:/user/users";
 	}
 	
 	@RequestMapping(value="{phone}/delete",method=RequestMethod.GET)
 	public String delete(@PathVariable String phone){
 		list.remove(phone);
-		return "redirect:user/users";
+		return "redirect:/user/users";
 	}
+
+//	@ExceptionHandler(NullPointerException.class)
+//	public String handlerException(NullPointerException e,HttpServletRequest request ){
+//		request.setAttribute("e", e);
+//		return "error";
+//		
+//	}
 }
