@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.qjk.data.User;
 
@@ -39,8 +40,8 @@ public class UserController {
 		
 //		System.out.println("METHOD users");
 		
-		User a = null;
-		a.getAge();
+//		User a = null;
+//		a.getAge();
 		model.addAttribute("users", list);
 		
 		return "user/users";
@@ -65,6 +66,12 @@ public class UserController {
 	public String show(@PathVariable String phone,Model model){
 		model.addAttribute(list.get(phone));
 		return "user/show";
+	}
+	@RequestMapping(value="{phone}",method=RequestMethod.GET,params={"json"})
+	@ResponseBody
+	public User show(@PathVariable String phone){
+		//model.addAttribute(list.get(phone));
+		return list.get(phone);
 	}
 	
 	@RequestMapping(value="{phone}/update",method=RequestMethod.GET)
