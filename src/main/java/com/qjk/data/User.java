@@ -2,12 +2,15 @@ package com.qjk.data;
 
 import java.io.Serializable;
 
+import org.hibernate.validator.constraints.Email;
+import org.hibernate.validator.constraints.NotEmpty;
+
 /**
  * 用户实体
  * @author qiejinkai
  *
  */
-public final class User extends Data implements Serializable{
+public class User extends Data implements Serializable{
 	
 	/**
 	 * 版本号
@@ -32,18 +35,17 @@ public final class User extends Data implements Serializable{
 		
 	}
 	
+
+	@NotEmpty(message="昵称不能为空")
 	public String getNick() {
 		return nick;
 	}
-
 	public void setNick(String nick) {
 		this.nick = nick;
 	}
-
 	public String getPassword() {
 		return password;
 	}
-
 	public void setPassword(String password) {
 		this.password = password;
 	}
@@ -56,14 +58,15 @@ public final class User extends Data implements Serializable{
 		this.age = age;
 	}
 
+	@NotEmpty(message="电话不能为空")
 	public String getPhone() {
 		return phone;
 	}
-
 	public void setPhone(String phone) {
 		this.phone = phone;
 	}
 
+	@Email(message="email格式不正确")
 	public String getEmail() {
 		return email;
 	}

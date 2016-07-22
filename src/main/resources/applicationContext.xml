@@ -71,19 +71,19 @@
 	</bean>
 
 	<!-- 支持上传文件 -->
-	<!-- <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver"/> -->
+	 <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver"/> 
 
-	<!-- Session工厂
+	<!-- Session工厂-->
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
-		<property name="dataSource" ref="dataSource" /> -->
-		<!-- mybatis配置文件 
+		<property name="dataSource" ref="dataSource" />
+		<!-- mybatis配置文件 -->
 		<property name="configLocation" value="classpath:mybatis.xml" />
-	</bean>-->
+	</bean>
 
-	<!-- 配置SqlSessionTemplate 
+	<!-- 配置SqlSessionTemplate -->
 	<bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
 		<constructor-arg name="sqlSessionFactory" ref="sqlSessionFactory" />
-	</bean>-->
+	</bean>
 
 
 	<!-- 开启事务注解驱动 -->

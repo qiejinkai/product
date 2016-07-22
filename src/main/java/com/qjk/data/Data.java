@@ -14,15 +14,17 @@ public class Data  implements Serializable{
 	 */
 	private static final long serialVersionUID = 1L;
 
-	private long id;
+	private long objectId;
 
-	public long getId() {
-		return id;
+	public long getObjectId() {
+		return objectId;
 	}
 
-	public void setId(long id) {
-		this.id = id;
+	public void setObjectId(long objectId) {
+		this.objectId = objectId;
 	}
+
+
 	
 	
 	

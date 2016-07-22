@@ -20,7 +20,7 @@ public class TestUserDao extends AbstractJUnit4SpringContextTests{
 	public void testUserDaoInsert(){
 		
 		User user = new User();
-		user.setId(1);
+		user.setObjectId(1);
 		user.setAge(12);
 		user.setNick("qiejinkai");
 		user.setPhone("13051701098");

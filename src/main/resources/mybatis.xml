@@ -7,17 +7,17 @@
      </settings>
 	
 	<typeAliases>
-		<typeAlias alias="Mood" type="com.qjk.entiy.Mood"/>
+<!-- 		<typeAlias alias="Mood" type="com.qjk.entiy.Mood"/>
 		<typeAlias alias="MoodVo" type="com.qjk.entiy.MoodVo"/>
 		<typeAlias alias="Article" type="com.qjk.entiy.Article"/>
 		<typeAlias alias="ArticleVo" type="com.qjk.entiy.ArticleVo"/>
-		<typeAlias alias="Counter" type="com.qjk.entiy.Counter"/>
+		<typeAlias alias="Counter" type="com.qjk.entiy.Counter"/> -->
 	</typeAliases>
 	
 	<!-- 指定映射文件-->
 	<mappers>
-		<mapper resource="com/qjk/entiy/sqlmap/Mood-sqlmap-mapping.xml" />
+<!-- 		<mapper resource="com/qjk/entiy/sqlmap/Mood-sqlmap-mapping.xml" />
 		<mapper resource="com/qjk/entiy/sqlmap/Counter-sqlmap-mapping.xml" />
-		<mapper resource="com/qjk/entiy/sqlmap/Article-sqlmap-mapping.xml" />
+		<mapper resource="com/qjk/entiy/sqlmap/Article-sqlmap-mapping.xml" /> -->
 	</mappers> 
 </configuration>

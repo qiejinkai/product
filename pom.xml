@@ -117,7 +117,25 @@
     	<type>zip</type>
     	<classifier>source-release</classifier>
     </dependency>
+	<!-- JSP Tags -->
+    <dependency>
+    	<groupId>jstl</groupId>
+    	<artifactId>jstl</artifactId>
+    	<version>1.2</version>
+    </dependency>
     
+    <!-- 校验  基于JSR303 bean-validation-->
+    <dependency>
+    	<groupId>javax.validation</groupId>
+    	<artifactId>validation-api</artifactId>
+    	<version>1.1.0.Final</version>
+    </dependency>
+
+    <dependency>
+    	<groupId>org.hibernate</groupId>
+    	<artifactId>hibernate-validator</artifactId>
+    	<version>5.2.0.Alpha1</version>
+    </dependency>
   </dependencies>
   <build>
     <finalName>product</finalName>

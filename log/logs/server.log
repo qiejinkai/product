@@ -1,4 +1,4 @@
-2016-07-22 00:25:03  [ main:0 ] - [ ERROR ]  init datasource error, url: jdbc:mysql://127.0.0.1:3306/product
+	2016-07-22 00:25:03  [ main:0 ] - [ ERROR ]  init datasource error, url: jdbc:mysql://127.0.0.1:3306/product
 com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'product'
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)

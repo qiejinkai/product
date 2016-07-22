@@ -57,7 +57,7 @@
 
     <servlet-mapping>
         <servlet-name>base</servlet-name>
-        <url-pattern>*.do</url-pattern>
+        <url-pattern>/</url-pattern>
     </servlet-mapping>
     	  	 
  	<filter>		
