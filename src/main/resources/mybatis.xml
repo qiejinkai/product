@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
-	 <settings>
+<!-- 	 <settings>
          <setting name="cacheEnabled" value="true"/>
 		 <setting name="logImpl" value="LOG4J"/>
-     </settings>
+     </settings> -->
 	
 	<typeAliases>
-<!-- 		<typeAlias alias="Mood" type="com.qjk.entiy.Mood"/>
-		<typeAlias alias="MoodVo" type="com.qjk.entiy.MoodVo"/>
+ 		<typeAlias alias="User" type="com.qjk.data.User"/>
+ 		<typeAlias alias="UserOptions" type="com.qjk.data.UserOptions"/>
+<!-- 	<typeAlias alias="MoodVo" type="com.qjk.entiy.MoodVo"/>
 		<typeAlias alias="Article" type="com.qjk.entiy.Article"/>
 		<typeAlias alias="ArticleVo" type="com.qjk.entiy.ArticleVo"/>
 		<typeAlias alias="Counter" type="com.qjk.entiy.Counter"/> -->
@@ -16,8 +17,6 @@
 	
 	<!-- 指定映射文件-->
 	<mappers>
-<!-- 		<mapper resource="com/qjk/entiy/sqlmap/Mood-sqlmap-mapping.xml" />
-		<mapper resource="com/qjk/entiy/sqlmap/Counter-sqlmap-mapping.xml" />
-		<mapper resource="com/qjk/entiy/sqlmap/Article-sqlmap-mapping.xml" /> -->
+	<mapper resource="com/qjk/dao/sqlmap/user-sqlmap-mapping.xml"></mapper>
 	</mappers> 
 </configuration>

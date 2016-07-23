@@ -2,26 +2,33 @@ package com.qjk.data;
 
 import java.io.Serializable;
 
+import javax.validation.constraints.Size;
+
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotEmpty;
 
 /**
- * �û�ʵ��
+ * 用户实体
  * @author qiejinkai
  *
  */
+
 public class User extends Data implements Serializable{
 	
+	
 	/**
-	 * �汾��
+	 * 版本号
 	 */
 	private static final long serialVersionUID = 1L;
+	
+	
+	public User() {
+		
+	}
 
 	private String nick;
 	
 	private String password;
-	
-	private int age;
 	
 	private String phone;
 	
@@ -29,20 +36,16 @@ public class User extends Data implements Serializable{
 	
 	private String logo;
 	
-	private String qr;
-	
-	public User() {
-		
-	}
-	
-
-	@NotEmpty(message="�ǳƲ���Ϊ��")
+	@Size(min=1,max=20,message="昵称应在1-20位之间")
+	@NotEmpty(message="昵称不能为空")
 	public String getNick() {
 		return nick;
 	}
 	public void setNick(String nick) {
 		this.nick = nick;
 	}
+	
+	@Size(min=6,max=24,message="密码应在6-24位之间")
 	public String getPassword() {
 		return password;
 	}
@@ -50,15 +53,7 @@ public class User extends Data implements Serializable{
 		this.password = password;
 	}
 
-	public int getAge() {
-		return age;
-	}
-
-	public void setAge(int age) {
-		this.age = age;
-	}
-
-	@NotEmpty(message="�绰����Ϊ��")
+	@NotEmpty(message="电话不能为空")
 	public String getPhone() {
 		return phone;
 	}
@@ -66,7 +61,8 @@ public class User extends Data implements Serializable{
 		this.phone = phone;
 	}
 
-	@Email(message="email��ʽ����ȷ")
+	@Email(message="email格式不正确")
+	@NotEmpty(message="email不能为空")
 	public String getEmail() {
 		return email;
 	}
@@ -81,14 +77,6 @@ public class User extends Data implements Serializable{
 
 	public void setLogo(String logo) {
 		this.logo = logo;
-	}
-
-	public String getQr() {
-		return qr;
-	}
-
-	public void setQr(String qr) {
-		this.qr = qr;
 	}
 	
 	

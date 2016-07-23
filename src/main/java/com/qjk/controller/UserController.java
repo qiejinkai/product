@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.qjk.data.User;
@@ -67,9 +68,16 @@ public class UserController {
 		model.addAttribute(list.get(phone));
 		return "user/show";
 	}
+
+	@RequestMapping(value="show",method=RequestMethod.GET)
+	@ModelAttribute
+	public User show(@RequestParam("phone") String phone){
+//		model.addAttribute(list.get(phone));
+		return list.get(phone);
+	}
 	@RequestMapping(value="{phone}",method=RequestMethod.GET,params={"json"})
 	@ResponseBody
-	public User show(@PathVariable String phone){
+	public User show(@PathVariable String phone,String json){
 		//model.addAttribute(list.get(phone));
 		return list.get(phone);
 	}

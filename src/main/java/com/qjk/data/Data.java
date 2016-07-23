@@ -3,14 +3,14 @@ package com.qjk.data;
 import java.io.Serializable;
 
 /**
- * ΚµΜε
+ * ε®δ½“η±»
  * @author qiejinkai
  *
  */
 public class Data  implements Serializable{
 	
 	/**
-	 * °ζ±ΎΊΕ
+	 * η‰ζ¬ε·
 	 */
 	private static final long serialVersionUID = 1L;
 
@@ -23,11 +23,6 @@ public class Data  implements Serializable{
 	public void setObjectId(long objectId) {
 		this.objectId = objectId;
 	}
-
-
-	
-	
-	
 	
 
 }
