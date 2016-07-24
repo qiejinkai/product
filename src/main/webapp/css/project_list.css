@@ -1,0 +1,70 @@
+/*
+ *张龙
+ *2015-10-09
+ *浏览项目
+ */
+@charset "utf-8";
+#project_warp{
+	padding-bottom:80px;
+}
+.project_list_class{
+	background-color:#eee;
+	margin-top:40px;
+	padding:13px 0;
+	overflow:hidden;
+}
+.project_list_class div{
+	line-height:40px;
+	padding-left:113px;
+	position:relative;
+	min-height:40px;
+
+	
+}
+.project_list_class div label{
+	display:inline-block;
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:114px;
+	height:40px;
+	line-height:40px;
+	text-indent:20px;
+	font-size:14px;
+	color:#333;
+}
+.project_list_class div a{
+	display:inline-block;
+	height:26px;
+	line-height:26px;
+	padding:0 15px;
+	border-radius:13px;
+	float:left;
+	margin:7px 0 0 0;
+	color:#333;
+	font-size:14px;
+}
+.project_list_class div a.selected{
+	color:#fff;
+	background-color:#26bfc1;
+	}
+/*project_list_title*/
+.project_list_title{
+	padding-top:32px;
+	height:42px;
+	line-height:42px;
+	border-bottom:1px solid #d5d5d5;
+	font-size:26px;
+	color:#333;
+}
+.project_list_title em{
+	color:#26bfc1;
+	padding:0 5px;
+	font-size:26px;
+	
+	}
+.project_list_box{
+	width:1200px;
+	padding-bottom:80px;
+	overflow:hidden;
+}

@@ -1,0 +1,96 @@
+/*
+ *张展
+ *2015-10-14
+ *我发起的
+ */
+ 
+
+/** 结款  **/
+.settlement_tip{
+	line-height:22px;
+	color:#26bfc1;
+	margin:30px 0 15px;
+	font-size:14px;
+	background:#ddf4f4;
+	border:1px solid #26bfc1;
+	padding:10px 15px;	
+}
+.settlement_detail_tit{
+	padding:10px 0;
+	overflow:hidden;
+}
+.settlement_detail_tit span{
+	float:left;
+	color:#333;
+	font-size:16px;
+	margin-right:100px;
+}
+.settlement_detail_tit span em{
+	font-size:16px;
+	color:#26bfc1;
+}
+.settlement_detail{
+	width:848px;
+	padding:10px 20px;
+	border:1px solid #e7e7e7;
+	overflow:hidden;
+	margin:5px 0;
+}
+.settlement_detail ul{
+	width:120%;
+}
+.settlement_detail ul li{
+	width:240px;
+	float:left;
+	margin-right:74px;
+	border-right:1px dashed #e7e7e7;
+}
+.settlement_detail ul li span, .settlement_detail ul li span em{
+	font-size:14px;
+	color:#333;
+	line-height:25px;
+}
+.settlement_detail ul li p{
+	font-size:14px;
+	color:#999;
+	line-height:25px;
+}
+.settlement_btn{
+	overflow:hidden;
+	padding-top:25px;
+	text-align:right;
+}
+.settlement_btn a.form_btn{
+    float:right;
+}
+.settlement_btn input.form_btn{
+    float:right;
+}
+.settlement_btn a.btn_disable{
+	width:335px;
+}
+.me_order_record ul li.list_10{
+	width:230px;
+}
+.me_order_record ul.me_order_top li.list_10{
+	text-indent:1em;
+}
+.me_order_record ul li.list_9{
+	width:220px;
+}
+.no_item{
+	width:100%;
+	overflow:hidden;
+	text-align:center;
+}
+.no_item span{
+	width:100px;
+	height:100px;
+	display:inline-block;
+	margin:70px auto 30px;
+	background:url(../../img/login/email_ico.png) no-repeat center center;
+}
+.no_item h2{
+	font-size:26px;
+}
+

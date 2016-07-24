@@ -1,6 +1,7 @@
 package com.qjk.data;
 
 import java.io.Serializable;
+import java.util.List;
 
 import javax.validation.constraints.Size;
 
@@ -13,7 +14,7 @@ import org.hibernate.validator.constraints.NotEmpty;
  *
  */
 
-public class User extends Data implements Serializable{
+public class User implements Serializable{
 	
 	
 	/**
@@ -25,7 +26,8 @@ public class User extends Data implements Serializable{
 	public User() {
 		
 	}
-
+	private long uid;
+	
 	private String nick;
 	
 	private String password;
@@ -36,6 +38,22 @@ public class User extends Data implements Serializable{
 	
 	private String logo;
 	
+	private List<UserOption> options;
+		
+	public List<UserOption> getOptions() {
+		return options;
+	}
+	public void setOptions(List<UserOption> options) {
+		this.options = options;
+	}
+	
+	
+	public long getUid() {
+		return uid;
+	}
+	public void setUid(long uid) {
+		this.uid = uid;
+	}
 	@Size(min=1,max=20,message="昵称应在1-20位之间")
 	@NotEmpty(message="昵称不能为空")
 	public String getNick() {

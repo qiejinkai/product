@@ -1,0 +1,106 @@
+/*
+ *张龙
+ *发起项目确认页
+ *2015-10-10
+ */
+/*in_bannar*/
+#in_bannar{
+	background:#26bfc1 url(../../img/in/in_bg.jpg) top center no-repeat;
+	width:100%;
+	min-width:1100px;
+	height:450px;
+	overflow:hidden;
+}
+.in_bannar_bg{
+	width:1100px;
+	height:104px;
+	background:url(../../img/in/in_font.png) top center no-repeat;
+	margin:150px auto;
+}
+.in_sure{
+	height:40px;
+	overflow:hidden;
+	padding:40px 0 80px 0px;
+	margin-bottom:36px;
+	border-bottom:1px solid #e5e5e5;
+}
+
+.in_sure .form_btn{
+	float:right;
+}
+.in_sure .form_checkbox{
+	float:left;
+	margin-top:4px;
+}
+.in_sure em{
+	float:left;
+	margin-left:5px;
+	color:#999999;
+	line-height:22px;
+}
+.in_sure em a{
+	color:#999;
+}
+.in_sure em a:hover{
+	color:#26bfc1;
+}
+/*in_sure_notice*/
+.in_sure_notice{
+	width:1098px;
+	border:1px solid #26bfc1;
+	background-color:#ddf4f4;
+	margin-bottom:145px;
+}
+.in_sure_notice p{
+	line-height:26px;
+	padding:15px;
+	color:#12bfc2;
+	font-size:14px;
+}
+/*in_phone 绑定手机提示*/
+#in_phone{
+	padding: 80px 0 300px 0px;
+	text-align:center;
+}
+#in_phone h1{
+	text-align:left;
+	border-bottom:1px solid #d5d5d5;
+	font-size:26px;
+	color:#333;
+	line-height:40px;
+	height:40px;
+}
+#in_phone .phone_ico{
+	background:url(../../img/in/in_ico.png) top center no-repeat;
+	height:102px;
+	margin-top:125px;
+}
+#in_phone h2{
+	font-size:26px;
+	line-height:60px;
+	color:#26bfc1;
+}
+
+#in_phone p{
+	font-size:16px;
+	line-height:46px;
+	color:#333;
+	padding-bottom:55px;
+}
+#in_phone .form_btn{
+	margin:0 17px;
+	width:118px;
+}
+/*in_sucess发起成功*/
+#in_phone .success_ico{
+	background-position:center -200px;
+}
+.warp #in_phone{
+	padding:50px 0 215px 0px;
+}
+#in_phone h4{
+	font-size:26px;
+	line-height:60px;
+	color:#333;
+	padding:30px 0 40px 0px;
+}

@@ -1,0 +1,153 @@
+/*
+ *张展
+ *2015-10-12
+ *左边导航样式
+ */
+ 
+
+
+/********** 个人资料  me_info  ***********/
+.me_info_box{
+	width:100%;
+	float:left;
+	border-bottom:1px dashed #eee;
+	padding-bottom:35px;
+	margin-bottom:30px;
+}
+.me_info_box:last-child{
+	border-bottom:none;
+}
+.me_info_box label.title{
+	float:left;
+	width:200px;
+	height:30px;
+	display:block;
+	font-size:16px;
+	line-height:40px;
+}
+.right_item{
+	float:right;
+	width:690px;
+}
+.list_box{
+	width:100%;
+	clear:both;
+	padding-bottom:20px;
+}
+.list_top{
+	overflow:hidden;
+}
+.city-select{
+	overflow:visible;
+}
+.me_header_img{
+	width:70px;
+	height:70px;
+	display:block;
+	float:left;
+	overflow:hidden;	
+	border-radius:50%;
+	margin-right:23px;
+}
+.me_header_img img{
+	width:100%;
+}
+.list_box .form_btn_load{
+	float:left;
+	width:118px;
+	margin-top:15px;
+}
+.list_box span.tip_txt{
+	float:left;
+	font-size:14px;
+	color:#999;
+	margin:37px 0 0 10px;
+}
+.list_box label{
+	float:left;
+	width:88px;
+	display:block;
+	line-height:40px;
+	font-size:16px;
+}
+.list_box a{
+	font-size:14px;
+	color:#26bfc1;
+}
+.list_box .form_radio{
+	float:left;
+	margin:14px 10px 0 0;
+}
+.list_box em{
+	float:left;
+	font-size:16px;
+	margin:7px 30px 0 0;
+}
+.list_box .form_text_1{
+	width:240px;
+	color:#333;
+}
+.list_box .form_text_2{
+	width:505px;
+	color:#333;
+}
+.list_box .form_text_3{
+	width:245px;
+	color:#333;
+}
+.list_box .form_text_4{
+	width:235px;
+	color:#333;
+}
+.list_box span.info{
+	line-height:40px;
+	color:#999;
+	width:180px;
+	display:inline-block;
+	font-size:14px;
+}
+.list_box span.disabled{
+	color:#333;
+}
+.list_box a.mn{
+	color:#26bfc1;
+	font-size:14px;
+	line-height:40px;
+	margin-left:10px;
+}
+.right_item .me_form_btn{
+	width:110px;
+	float:right;
+}
+.list_box_check ul{
+	width:600px;
+	overflow:hidden;
+}
+.list_box_check ul li{
+	float:left;
+	min-width:120px;
+	height:30px;
+	line-height:30px;
+	overflow:hidden;
+}
+.list_box_check ul li .form_checkbox{
+	margin-top:10px;
+	float:left;
+}
+.list_box span.text_checkbox{
+	font-size:14px;
+	float:left;
+	margin:4px 0 0 6px;
+}
+.list_box span.checked{
+	color:#26bfc1;
+}
+.list_box .form_select_time{
+	width:100px;
+	float:left;
+}
+
+/** select 样式重写 **/
+.ui_select a.cur .ui_select_ico{
+	margin:0;
+}

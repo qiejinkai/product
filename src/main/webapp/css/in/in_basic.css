@@ -1,0 +1,236 @@
+/*
+ *张龙
+ *发起项目
+ *2015-10-10
+ */
+/*in_com_nav*/
+#in_com_nav{
+	background-color:#eeeeee;
+	border-bottom:1px solid 
+	width:100%;
+	min-width:1100px;
+	height:112px;
+	overflow:hidden;
+}
+
+#in_com_nav ul{
+	float:left;
+	height:65px;
+	padding-top:47px;
+	line-height:65px;	
+}
+#in_com_nav ul li{
+	float:left;
+	margin-right:112px;
+}
+#in_com_nav ul li span{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:50px;
+	color:#666;
+}
+#in_com_nav ul li em{
+	font-size:16px;
+	color:#666;
+}
+#in_com_nav ul li.selected{
+	background:url(../../img/in/basic_nav.png) center bottom no-repeat;
+}
+#in_com_nav ul li.selected span,
+#in_com_nav ul li.selected em{
+	color:#26bfc1;
+}
+#in_com_nav p{
+	float:right;
+	height:22px;
+	margin-top:80px;
+	line-height:22px;
+
+}
+#in_com_nav p a{
+	display:inline-block;
+	height:22px;
+	line-height:22px;
+	padding-left:30px;
+	margin-left:30px;
+	color:#26bfc1;
+	font-size:16px;
+	position:relative;
+}
+#in_com_nav span.icon_20{
+	position:absolute;
+	top:1px;
+	left:0;
+}
+/*in_basic_left*/
+#in_basic_left{
+	width:684px;
+	float:left;
+	margin-top:58px;
+}
+#in_basic_left h1{
+	line-height:40px;
+	height:40px;
+	color:#333333;
+	font-size:16px;
+}
+.form_upload{
+	width:445px;
+	height:324px;
+	background:#eee url(../../img/in/upload_tip_bg.png) no-repeat center center;
+	position:relative;
+	overflow:hidden;	
+}
+.form_upload img{
+	width:100%;
+}
+.form_upload p{
+	position:absolute;
+	top:0;
+	width:100%;
+	height:100%;
+	text-align:center;
+	left:0px;
+	line-height:324px;
+	z-index:1;
+	font-size:16px;
+	color:#fff;
+	background-color:rgba(0,0,0,0.6);
+	display:none;
+}
+.basic_notice{
+	padding-bottom:21px;
+	line-height:33px;
+	color:#999;
+	font-size:14px;
+}
+.basic_filed {
+	min-height:40px;	
+	padding-bottom:12px;
+}
+.basic_title{
+	width:672px;
+}
+.basic_summary{
+	width:662px;
+	height:188px;
+	padding:5px 10px;
+}
+/*.basic_classify_title*/
+.basic_classify_title span,
+.basic_classify{
+	display:inline-block;
+	width:327px;
+	float:left;
+	margin-right:44px;
+	height:40px;
+}
+.basic_city{
+	float:left;
+	height:40px;
+}
+/*basic_tags_title*/
+.basic_tags_title span,
+.basic_tags{
+	display:inline-block;
+	width:510px;
+	float:left;
+	margin-right:44px;
+	height:40px;
+}
+.basic_text_tags{
+	width:498px;
+}
+.basic_day{
+	float:left;
+	height:40px;
+	width:130px;
+}
+.basic_text_day{
+	width:118px;
+}
+/*.basic_day*/
+.basic_day,
+.basic_least,
+.basic_target
+{
+	position:relative;
+	float:left;
+}
+.basic_day em,
+.basic_least em,
+.basic_target em{
+	position:absolute;
+	right:12px;
+	color:#ccc;
+	font-size:14px;
+	top:0px;
+	z-index:1;
+	display:inline-block;
+	height:40px;
+	line-height:40px;
+}
+/*basic_least*/
+.basic_least{
+	    display: inline-block;
+    width: 320px;
+    float: left;
+    margin-right: 44px;
+    height: 40px;
+}
+.basic_least .basic_text_least{
+	width:308px;
+}
+.basic_target .basic_text_target{
+	width:308px;
+}
+/*in_basic_notice*/
+.in_basic_notice{
+	width:682px;
+	border:1px solid #26bfc1;
+	background-color:#ddf4f4;
+	margin-bottom:90px;
+}
+.in_basic_notice p{
+	line-height:26px;
+	padding:15px;
+	color:#12bfc2;
+	font-size:14px;
+}
+
+/*#in_basic_right*/
+#in_basic_right{
+	float:right;
+	background:url(../../img/in/basic_bg.png) center bottom no-repeat;
+	width:318px;
+	height:500px;
+	margin-top:58px;
+}
+#in_basic_right .succ_pro_list_box{
+	width:302px;
+	margin:0 auto;
+	float:none;
+}
+#in_basic_right h1{	
+	line-height:40px;
+	text-align:center;
+}
+/*#in_basic_btn*/
+
+#in_basic_btn{
+	width:100%;
+	clear:both;
+	padding:20px 0px 80px;
+	border-top:1px solid #e7e7e7;
+}
+#in_basic_btn .form_btn{
+	float:right;
+	margin-left:30px;
+	width:118px;
+}
+
+/** 红星 **/
+em.must{
+	color:#fc5246 !important;
+	padding-left:0 !important;
+	font-size:16px !important;
+}

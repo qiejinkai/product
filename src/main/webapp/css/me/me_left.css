@@ -1,0 +1,62 @@
+/*
+ *张展
+ *2015-10-12
+ *左边导航样式
+ */
+ 
+ 
+/**********  me_left  ***********/
+.me_left{
+	float:left;
+	width:120px;
+	min-height: 700px;
+	margin-top:85px;
+}
+.me_left h2{
+	line-height:36px;
+	height:36px;
+	color:#333333;
+	font-size:16px;
+	border-bottom:1px solid #e7e7e7;
+	border-top:1px solid #e7e7e7;
+	}
+.me_left ul{
+	padding:21px 0;
+	overflow:hidden;
+}
+.me_left li{
+	height:36px;
+	line-height:36px;
+	
+}
+.me_left li.selected a{
+	color:#26bfc1;
+}
+.me_left li a{
+	height:36px;
+	line-height:36px;
+	width:120px;
+	display:block;
+	color:#999999;
+	font-size:14px;
+}
+.me_left li a:hover{
+	color:#26bfc1;
+}
+.main_left li.selected a{
+	color:#26bfc1;
+}
+
+
+/** me_right **/
+.me_right{
+	width:890px;
+	height:auto;
+	overflow:hidden;
+	float:right;
+	margin-top:80px;
+}
+.me_right h1{
+	font-size:26px;
+	height:60px;
+} 

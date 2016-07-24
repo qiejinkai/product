@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>详细信息-发起项目</title>
+<link rel="stylesheet" type="text/css" href="../../css/reset.css" />
+<link rel="stylesheet" type="text/css" href="../../css/in/in_basic.css" />
+<link rel="stylesheet" type="text/css" href="../../css/in/in_detail.css" />
+<script type="text/javascript" src="../../js/jquery.mini.js"></script>
+</head>
+<body>
+<!--header-->
+<div id="header">
+	<div class="header">
+    	<a class="logo" href="/"></a>
+        <div class="header_r">
+        	<div class="header_search">
+            	<input type="text" class="search_text" />
+                <input type="button" class="header_btn" />
+            </div>
+            <div class="header_login" style="display:none;">
+            	<a>注册</a>
+                <a>登录</a>            	
+            </div>
+            <div class="header_user">
+            	<div class="header_logo">
+                	<em>
+                    	<img src="../img/default_logo.png" />                        
+                    </em>
+                    <i>89</i>
+                    <span>
+                    	高小明
+                    </span>
+                </div>
+                <div class="user_nav" id="user_nav">
+                	<em></em>
+                	<ul>
+                    	<li><a>我发起的</a></li>
+                        <li><a>我支持的</a></li>
+                        <li><a>我的消息</a></li>
+                        <li><a>个人资料</a></li>
+                        <li><a>安全退出</a></li>
+                	</ul>
+                </div>
+                <script>
+                	$(function(){
+						$('.header_logo').hover(function(){
+							$('#user_nav').show();							
+							});
+							$('#user_nav').bind("mouseleave",function(){
+							$('#user_nav').hide();							
+							});
+						
+						});
+                </script>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<!--header_nav-->
+<div id="header_nav">
+	<div class="header_nav">
+    	<em>
+            <a>首页</a>
+            <a class="selected" id="more_porject">浏览项目</a>
+            <a>发起项目</a>
+            <a class="last">帮助中心</a>
+        </em>
+        <span>客户电话：400-086-4896</span>
+        <div class="user_nav" id="more_porject_ul">
+                	<em></em>
+                	<ul>
+                    	<li><a>武侠出版</a></li>
+                        <li><a>现代都市</a></li>
+                        <li><a>玄幻奇幻</a></li>
+                        <li><a>校园青春</a></li>
+                        <li><a>网络英雄</a></li>
+                	</ul>
+       </div>
+       
+        <script>
+                	$(function(){
+						$('#more_porject').hover(function(){
+							$('#more_porject_ul').show();							
+							});
+							$('#more_porject_ul').bind("mouseleave",function(){
+							$('#more_porject_ul').hide();							
+							});
+						
+						});
+                </script>
+    </div>
+</div>
+<!--  banner   -->
+<div id="in_com_nav">
+	<div class="warp">
+    	<ul>
+        	<li class="selected">
+            	<span>01</span>
+            	<em>/基本信息</em>
+            </li>
+            <li>
+            	<span>02</span>
+            	<em>/回报方案</em>
+            </li>
+            <li>
+            	<span>03</span>
+            	<em>/项目详情</em>
+            </li>
+        </ul>
+        <p>
+        	<a>发起项目规范</a>
+            <a>发起人须知</a>
+        </p>
+    
+    </div>
+
+</div>
+<!--in_bannar-->
+<div class="warp">
+	<div class="in_details_main">
+    	<h1>上传项目背景图<em>从<a>[背景库]</a>中选择</em></h1>
+        <div class="banner_thumb">
+        	
+        </div>
+        <div class="basic_notice">
+        （大小不超过2M， 建议图片尺寸：1920*450px。特别注意：请将核心内容设计在背景图中部1100尺寸的范围内，避免出现浏览器尺寸偏小显示不全的现象）
+        </div>
+        <h1>添加视频地址</h1>
+        <div class="basic_filed">
+        	<input class="form_text" type="text" value="http://"><em>可适配优酷，土豆视频连接</em>
+        </div>
+        <h1>编辑项目详情</h1>
+        <div class="basic_filed">
+        	<textarea class="form_textarea"></textarea>
+        </div>
+        <a class="form_btn">上传word文档编辑</a>
+        <h2>快速编辑项目详情<em>（建议上传.doc文档，其他格式可能出现不可知的问题）</em></h2>
+        <div class="in_basic_notice">
+            <p>
+                项目编辑详情注意事项：<br />
+                1. 图片和文字结合的项目描述会更更能打动支持者。<br>
+                2.为了保障图片质量和用户打开页面的加载效果，请尽量控制每张图片的大小在200K以内。
+            </p>
+        </div>
+        
+	</div>
+    <!-- in_basic_left -->
+    
+    <!-- in_details_main -->
+    <div id="in_basic_btn">
+    	
+        <input type="button" class="form_btn" value="提交项目" />
+        <input type="button" class="form_btn" value="保&nbsp;&nbsp;存" />
+        <input type="button" class="form_btn" value="预&nbsp;&nbsp;览" />
+    </div>
+    <!--in_basic_btn -->
+</div>
+<!--footer -->
+<div id="footer">
+	<div class="footer_nav">
+    	<a>关于我们</a>
+        <a>新手指引</a>
+        <a>合作伙伴</a>
+        <a class="last">隐私保护</a>
+        <span>浙ICP备15004899号-1  |  咪咕数字传媒有限公司所有</span>    
+    </div>
+</div>
+
+<!-- 弹窗 图片库  -->
+<div class="fix_grey_bg" style="display:block;"></div>
+<div class="dialog_box" style="display:block;">
+	<h2>请选择图片</h2>
+    <div class="gallery">
+    	<img src="../../img/in/bullem.png" class="selected">
+        <img src="../../img/in/bullem.png">
+        <img src="../../img/in/bullem.png">
+        <img src="../../img/in/bullem.png">
+        <img src="../../img/in/bullem.png">
+        <img src="../../img/in/bullem.png">
+    </div>
+    <div id="in_basic_btn">
+    	<input type="button" class="form_btn form_btn_del" value="取 消" />
+        <input type="button" class="form_btn" value="确 认" />       
+    </div>
+</div>
+<script>
+  $(function(){
+	  $('h1 em a').click(function(){
+		  $('.fix_grey_bg').show();
+		  $('.dialog_box').show();							
+		  });
+	  $('#in_basic_btn .form_btn_del').click(function(){
+		  $('.fix_grey_bg').hide();
+		  $('.dialog_box').hide();
+		  });
+	  });
+</script>
+
+</body>
+</html>

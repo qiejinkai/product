@@ -1,8 +1,10 @@
 package com.qjk.controller;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.http.HttpRequest;
@@ -19,6 +21,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.qjk.data.User;
+import com.qjk.service.IUserService;
 
 @Controller
 @RequestMapping("/user")
@@ -26,23 +29,14 @@ public class UserController {
 	
 	Map<String,User> list = new HashMap<String,User>();
 
+	@Resource
+	IUserService userService;
+	
 	
 	@RequestMapping(value="/users",method=RequestMethod.GET)
 	public String users(Model model){
 		
-//		for (int i = 0; i < 4; i++) {
-//			User user = new User();
-//			user.setNick("zs"+i);
-//			user.setPhone("13051701098");
-//			user.setObjectId(i);
-//			user.setEmail("qiejinkai@126.com");
-//			list.add(user);
-//		}
-		
-//		System.out.println("METHOD users");
-		
-//		User a = null;
-//		a.getAge();
+		List<User> list = userService.queryUser();
 		model.addAttribute("users", list);
 		
 		return "user/users";
@@ -59,51 +53,53 @@ public class UserController {
 		if(result.hasErrors()){
 			return "user/add";
 		}
-		list.put(user.getPhone(),user);
+		userService.addUser(user);
 		return "redirect:/user/users";
 	}
 	
-	@RequestMapping(value="{phone}",method=RequestMethod.GET)
-	public String show(@PathVariable String phone,Model model){
-		model.addAttribute(list.get(phone));
+	@RequestMapping(value="{id}",method=RequestMethod.GET)
+	public String show(@PathVariable long id,Model model){
+		model.addAttribute(userService.findUserById(id));
 		return "user/show";
 	}
 
 	@RequestMapping(value="show",method=RequestMethod.GET)
 	@ModelAttribute
-	public User show(@RequestParam("phone") String phone){
+	public User show(@RequestParam("id") long id){
 //		model.addAttribute(list.get(phone));
-		return list.get(phone);
+		return userService.findUserById(id);
 	}
-	@RequestMapping(value="{phone}",method=RequestMethod.GET,params={"json"})
+	@RequestMapping(value="{id}",method=RequestMethod.GET,params={"json"})
 	@ResponseBody
-	public User show(@PathVariable String phone,String json){
+	public User show(@PathVariable long id,String json){
 		//model.addAttribute(list.get(phone));
-		return list.get(phone);
+		return userService.findUserById(id);
 	}
 	
-	@RequestMapping(value="{phone}/update",method=RequestMethod.GET)
-	public String update(@PathVariable String phone,Model model){
+	@RequestMapping(value="{id}/update",method=RequestMethod.GET)
+	public String update(@PathVariable long id,Model model){
 		
-		model.addAttribute(list.get(phone));
+		model.addAttribute(userService.findUserById(id));
 		
 		return "user/update";
 	}
 	
-	@RequestMapping(value="{phone}/update",method=RequestMethod.POST)
-	public String update(@PathVariable String phone ,@Validated User user,BindingResult result){
+	@RequestMapping(value="{id}/update",method=RequestMethod.POST)
+	public String update(@Validated User user,BindingResult result){
 		if(result.hasErrors()){
 			return "user/update";
 			
 		}
-		list.put(phone, user);
+		userService.updateUser(user);
 		
 		return "redirect:/user/users";
 	}
 	
-	@RequestMapping(value="{phone}/delete",method=RequestMethod.GET)
-	public String delete(@PathVariable String phone){
-		list.remove(phone);
+	@RequestMapping(value="{id}/delete",method=RequestMethod.GET)
+	public String delete(@PathVariable long id){
+		User u = new User();
+		u.setUid(id);
+		userService.deleteUser(u);
 		return "redirect:/user/users";
 	}
 

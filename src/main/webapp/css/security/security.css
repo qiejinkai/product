@@ -1,0 +1,197 @@
+/*
+ *张展
+ *2015-10-15
+ *安全中心
+ */
+ 
+
+/** 样式重置 **/
+.me_right h1{
+	height:50px;
+}
+
+/**********  security  ***********/
+.security_item, .security_item_sm{
+	overflow:hidden;
+	padding:10px 0;
+	line-height:40px;
+}
+.security_item label, .security_item_sm label{
+	width:84px;
+	line-height:40px;
+	float:left;
+	text-align:right;
+	font-size:14px;
+	margin-right:10px;
+}
+.security_item input.form_text{
+	width:278px;
+	float:left;
+}
+.security_item_sm input.form_text{
+	width:162px;
+	float:left;
+}
+.security_item_sm img{
+	float:left;
+	width:104px;
+	height:38px;
+	margin-left:10px;
+	display:block;
+	border:1px solid #e7e7e7;
+}
+.security_item_sm input.form_btn{
+	width:106px;
+	float:left;
+	margin-left:10px;
+}
+.security_btn{
+	margin-top:30px;
+}
+.security_content_1, .security_content_2{
+	padding:25px 0;
+}
+.security_content_1 .security_item label, .security_content_1 .security_item_sm label{
+	width:70px;
+	line-height:40px;
+	float:left;
+	text-align:right;
+	font-size:14px;
+	margin-right:10px;
+}
+
+/** 弹窗 **/
+.pop_wrap{
+	width:800px;
+	margin-left:-400px;
+}
+.pop_security{
+	padding:0 53px;
+}
+.pop_security h2{
+	font-size:24px;
+	color:#666;
+	margin-top:42px;
+}
+.pop_security h2 i{
+	font-size:24px;
+	color:#26bfc1;
+}
+.pop_security span{
+	font-size:16px;
+	color:#666;
+	padding:30px 0 20px;
+	display:block;
+}
+.pop_security p{
+	font-size:14px;
+	color:#666;
+}
+.pop_security p a{
+	color:#26bfc1;
+}
+.pop_security a.form_btn{
+	margin-top:50px;
+}
+
+/** 实名认证 **/
+.security_item_mx{
+	overflow:hidden;
+	padding:10px 0;
+}
+.security_item_mx label{
+	width:126px;
+	line-height:40px;
+	float:left;
+	text-align:right;
+	font-size:14px;
+	margin-right:10px;
+}
+.security_item_mx input.form_text{
+	width:278px;
+	float:left;
+}
+.security_item_mx .partner_img{
+	width:182px;
+	height:132px;
+	display:block;
+	float:left;
+	background:#eee url(../../img/in/upload_tip_bg.png) no-repeat center center;
+}
+.security_right{
+	float:left;
+	width:360px;
+	height:auto;
+	display:block;
+	overflow:hidden;
+}
+.security_right .user_img{
+	float:left;
+	width:182px;
+	height:132px;
+	display:block;
+	background:#eee url(../../img/in/upload_tip_bg.png) no-repeat center center;
+}
+.security_right .eg_img{
+	float:right;
+	width:152px;
+	height:132px;
+	display:block;
+	background:#eee url(../../img/in/upload_tip_bg.png) no-repeat center center;
+}
+.security_tip{
+	float:left;
+	line-height:22px;
+	color:#26bfc1;
+	margin:30px 0 15px;
+	font-size:14px;
+	background:#ddf4f4;
+	border:1px solid #26bfc1;
+	padding:10px 15px;	
+}
+
+/** 安全中心首页 **/
+.right_top h1.border_bottom{
+	border-bottom:1px solid #e7e7e7;
+}
+.main_security_item{
+	overflow:hidden;
+	padding:34px 0;
+	position:relative;
+	border-bottom:1px solid #e7e7e7;
+}
+.main_security_item span.icon_36{
+	position:absolute;
+	top:36px;
+	left:0;
+}
+.main_security_item .tit{
+	width:89px;
+	height:34px;
+	display:block;
+	font-size:16px;
+	line-height:34px;
+	border-right:1px solid #e7e7e7;
+	float:left;
+	margin:3px 36px 0 45px; 
+}
+.main_security_item .txt{
+	line-height:40px;
+	font-size:14px;
+	color:#999;
+	float:left;
+}
+.main_security_item .right_btn{
+	float:right;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	color:#26bfc1;
+}
+.main_security_item .right_btn a{
+	font-size:14px;
+	color:#26bfc1;
+}
+.main_security_item .selected a{
+	color:#999;
+}

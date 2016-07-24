@@ -1,0 +1,210 @@
+/*
+ *张展
+ *2015-10-14
+ *我发起的
+ */
+ 
+
+/** 我发起的首页 **/
+.me_pro_item_top{
+	width:100%;
+	display:block;
+	overflow:hidden;
+	height:32px;
+	background-color:#f3f3f3;
+	margin-top:30px;
+}
+.me_pro_item_top ul li{
+	float:left;
+	line-height:32px;
+	font-size:14px;
+	color:#999;
+}
+.me_pro_item_top ul li.list_1{
+	width:380px;
+	margin-right:90px;
+	text-indent:1em;
+}
+.me_pro_item_top ul li.list_2{
+	width:75px;
+	margin-right:100px;
+}
+.me_pro_item_top ul li.list_3{
+	width:75px;
+	margin-right:100px;
+}
+.me_pro_item_top ul li.list_4{
+    width:70px;
+}
+.me_pro_item_top ul li.list_5{
+    width:75px;
+    margin-right:20px;
+}
+.me_pro_item_top ul li.list_com{
+    width:85px;
+}
+.me_pro_item{
+	padding:30px 0;
+	overflow:hidden;
+	border-bottom:1px dashed #e7e7e7;
+}
+.me_pro_item .list_1{
+	width:380px;
+	margin-right:90px;
+	float:left;
+	font-size:14px;
+}
+.me_pro_item .list_2{
+	width:75px;
+	margin-right:100px;
+	float:left;
+	font-size:14px;
+	min-height:40px;
+	display:block;
+}
+.me_pro_item .list_3{
+	width:75px;
+	margin-right:100px;
+	float:left;
+	font-size:14px;
+	min-height:40px;
+	display:block;
+}
+.me_pro_item .list_4{
+	float:left;
+	font-size:14px;
+}
+.me_pro_item .list_5{
+    width:75px;
+    margin-right:20px;
+    float:left;
+    font-size:14px;
+    min-height:40px;
+    display:block;
+}
+.me_pro_item .list_com{
+    float:left;
+    font-size:14px;
+    min-height:40px;
+    width: 85px;
+}
+.me_pro_item_img{
+	width:146px;
+	height:110px;
+	display:block;
+	overflow:hidden;
+	float:left;
+	padding-top:3px;
+}
+.me_pro_item_img img{
+	width:100%;
+}
+.me_pro_item_right{
+	width:214px;
+	float:right;
+}
+.me_pro_item h2{
+	font-size:14px;
+	color:#999;
+	padding-bottom:5px;
+}
+.me_pro_item_right h3{
+	width:100%;
+	height:20px;
+	font-size:14px;
+	overflow:hidden;
+	margin-bottom:8px;
+}
+
+.pro_list_prosess{
+	width:100%;
+	height:4px;
+	display:block;
+	background-color:#f2f2f2;
+	overflow:hidden;
+	margin-top:18px;
+}
+.pro_list_prosess span{
+	width:30%;
+	height:4px;
+	display:block;
+	overflow:hidden;
+	background-color:#26bfc1;
+}
+.pro_list_bottom{
+	margin-top:6px;
+}
+.pro_list_bottom ul{
+	width:100%;
+	height:auto;
+	display:table;
+}
+.pro_list_bottom ul li{
+	display:table-cell;
+	padding-left:7px;
+	border-right:1px dashed #e7e7e7;
+    *float: left;
+    *padding-right: 10px;
+}
+.pro_list_bottom ul li:first-child{
+	padding-left:0;
+}
+.pro_list_bottom ul li:last-child{
+	border-right:none;
+}
+.pro_list_bottom ul li span{
+	display:block;
+	font-size:12px;
+	color:#999;
+}
+.pro_list_bottom ul li span em{
+	color:#333;
+	font-size:16px;
+}
+.pro_list_bottom ul li span i{
+	color:#333;
+	font-size:12px;
+}
+.me_pro_item .list_4 a{
+	font-size:14px;
+	color:#26bfc1;
+	display:block;
+}
+.fail_box{
+	position:relative;
+	display:block;
+}
+.fail_box a{
+	font-size:14px;
+	color:#26bfc1;
+}
+.fail_box i{
+	width:8px;
+	height:5px;
+	display:block;
+	position:absolute;
+	top:-5px;
+	right:22px;
+	z-index:102;
+	background:url(../../img/tip_top.png) no-repeat;
+}
+.fail_box span{
+	width:206px;
+	padding:5px 10px;
+	min-height:40px;
+	display:none;
+	position:absolute;
+	top:26px;
+	right:0;
+	border:1px solid #26bfc1;
+	background:#ddf4f4;
+	line-height:20px;
+	word-break:break-all;
+	z-index:101;
+	font-size:14px;
+	color:#26bfc1;
+}
+.fail_box:hover span{
+	display:block;
+}
+

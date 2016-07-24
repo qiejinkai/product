@@ -1,0 +1,133 @@
+/*
+ *张展
+ *2015-10-16
+ *内容部分
+ */
+@charset "utf-8";
+
+
+/** 资讯中心 **/
+.main_right_nav{
+	line-height:42px;
+	border-bottom:1px solid #eeeeee;
+	color:#999;
+	font-size:14px;
+	margin-bottom:20px;
+}
+.main_right_nav a{
+	color: #999;
+}
+.main_right_nav a:hover{
+	color:#26bfc1;
+}
+.main_right_nav em{
+	color:#26bfc1;
+}
+
+.main_news_list{
+	width:100%;
+	clear:both;
+	overflow:hidden;
+	padding:20px 0 20px 0px;
+	
+}
+.main_news_img{
+	width:184px;
+	height:135px;
+	float:left;
+	overflow:hidden;
+}
+.main_news_img img{
+	width:100%;
+}
+.main_news_infos{
+	width:678px;
+	float:right;
+	}
+.main_news_infos h2{
+	font-size:16px;
+	padding-bottom:10px;
+	width:460px;
+	height:19px;
+	line-height:19px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	}
+
+.main_news_infos p{
+	height:84px;
+	line-height:20px;
+	font-size:14px;
+	color:#999;
+	overflow:hidden;
+}
+.main_news_infos span{
+	font-size:14px;
+	height:15px;
+	margin-top:7px;
+	color:#999;
+	display:block;
+}
+
+/**  消息中心 **/
+.main_info_list{
+	width:100%;
+	clear:both;
+	overflow:hidden;
+	padding:25px 0 25px;	
+	border-bottom:1px dashed #e7e7e7;
+}
+.main_info_list h2{
+	font-size:16px;
+	padding-bottom:10px;
+	width:460px;
+	height:19px;
+	line-height:19px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	}
+
+.main_info_list p{
+	height:44px;
+	line-height:24px;
+	font-size:14px;
+	color:#999;
+	overflow:hidden;
+}
+.main_info_list span{
+	font-size:14px;
+	height:15px;
+	margin-top:15px;
+	color:#999;
+	display:block;
+}
+.top_title{
+	padding:10px 0 10px;
+	border-bottom:1px dashed #e7e7e7;
+}
+.top_title h1{
+	font-size:26px;
+	height:40px;
+}
+.top_title span{
+	font-size:14px;
+	color:#999;
+	margin-right:10px;
+}
+.info_content{
+	padding:20px 0 120px;
+	overflow:hidden;
+}
+.info_content p{
+	padding:8px 0;
+	line-height:20px;
+	font-size:14px;
+	background-color:#fdfdfd !important;
+}
+.info_content div.main_contents_img img,
+.info_content div img{
+	max-width:100%;
+	display:inherit;
+}

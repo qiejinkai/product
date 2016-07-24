@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>详细信息-发起项目</title>
+<link rel="stylesheet" type="text/css" href="../../css/reset.css" />
+<link rel="stylesheet" type="text/css" href="../../css/in/in_basic.css" />
+<link rel="stylesheet" type="text/css" href="../../css/in/reward_plan.css" />
+<script type="text/javascript" src="../../js/jquery.mini.js"></script>
+<script type="text/javascript" src="../../js/jquery.select.js"></script>
+</head>
+<body>
+<!--header-->
+<div id="header">
+	<div class="header">
+    	<a class="logo" href="/"></a>
+        <div class="header_r">
+        	<div class="header_search">
+            	<input type="text" class="search_text" />
+                <input type="button" class="header_btn" />
+            </div>
+            <div class="header_login" style="display:none;">
+            	<a>注册</a>
+                <a>登录</a>            	
+            </div>
+            <div class="header_user">
+            	<div class="header_logo">
+                	<em>
+                    	<img src="../img/default_logo.png" />                        
+                    </em>
+                    <i>89</i>
+                    <span>
+                    	高小明
+                    </span>
+                </div>
+                <div class="user_nav" id="user_nav">
+                	<em></em>
+                	<ul>
+                    	<li><a>我发起的</a></li>
+                        <li><a>我支持的</a></li>
+                        <li><a>我的消息</a></li>
+                        <li><a>个人资料</a></li>
+                        <li><a>安全退出</a></li>
+                	</ul>
+                </div>
+                <script>
+                	$(function(){
+						$('.header_logo').hover(function(){
+							$('#user_nav').show();							
+							});
+							$('#user_nav').bind("mouseleave",function(){
+							$('#user_nav').hide();							
+							});
+						
+						});
+                </script>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<!--header_nav-->
+<div id="header_nav">
+	<div class="header_nav">
+    	<em>
+            <a>首页</a>
+            <a class="selected" id="more_porject">浏览项目</a>
+            <a>发起项目</a>
+            <a class="last">帮助中心</a>
+        </em>
+        <span>客户电话：400-086-4896</span>
+        <div class="user_nav" id="more_porject_ul">
+                	<em></em>
+                	<ul>
+                    	<li><a>武侠出版</a></li>
+                        <li><a>现代都市</a></li>
+                        <li><a>玄幻奇幻</a></li>
+                        <li><a>校园青春</a></li>
+                        <li><a>网络英雄</a></li>
+                	</ul>
+       </div>
+       
+        <script>
+                	$(function(){
+						$('#more_porject').hover(function(){
+							$('#more_porject_ul').show();							
+							});
+							$('#more_porject_ul').bind("mouseleave",function(){
+							$('#more_porject_ul').hide();							
+							});
+						
+						});
+                </script>
+    </div>
+</div>
+<!--  banner   -->
+<div id="in_com_nav">
+	<div class="warp">
+    	<ul>
+        	<li class="selected">
+            	<span>01</span>
+            	<em>/基本信息</em>
+            </li>
+            <li>
+            	<span>02</span>
+            	<em>/回报方案</em>
+            </li>
+            <li>
+            	<span>03</span>
+            	<em>/项目详情</em>
+            </li>
+        </ul>
+        <p>
+        	<a>发起项目规范</a>
+            <a>发起人须知</a>
+        </p>
+    
+    </div>
+
+</div>
+<!--in_bannar-->
+<div class="warp">
+	<!-- 方案开始 -->
+	<div class="reward_plan_box">
+    	<div class="reward_tit">
+        	<h2>回报方案1</h2>
+            <a class="form_btn">删除</a>
+        </div>
+        <div class="reward_left">
+        	<div class="reward_je">
+            	<label>支持的金额</label>
+                <input class="form_text" type="text" placeholder="100"><em>元</em>
+            </div>
+            <div class="reward_fs">
+            	<label>是否限份数</label>
+                <select class="form_select province" name="province" elwidth='154' itemWidth="152" rowCount="8">
+                    <option value="">是</option>
+                    <option>否</option>
+                </select>
+                <input class="form_text" type="text" placeholder="100"><em>份</em>
+            </div>
+            <div style="clear:both;"></div>
+            <div class="reward_solo">
+            	<label>限制单个用户支持份数</label>
+                <input class="form_text" type="text" placeholder="100"><em>不输入则默认为不限制</em>
+            </div>
+            <div class="reward_solo">
+            	<label>回报描述</label>
+                <textarea class="form_textarea" placeholder="请输入关键词标签，便于搜索"></textarea>
+            </div>
+            <div class="reward_solo">
+            	<label>回报产品</label>
+                <div class="product_img_box">
+                	<div class="product_img">
+                		<img src="../../img/img.jpg">
+                        <i></i>
+                    </div>
+                    <div class="product_img">
+                		<img src="../../img/img.jpg">
+                        <i></i>
+                    </div>
+                    <div class="product_img">
+                		<img src="../../img/img.jpg">
+                        <i></i>
+                    </div>
+                </div>
+                <p>(大小不要超过1M ，建议图片尺寸：600*440px)</p>
+            </div>
+            <div class="reward_solo">
+            	<label>是否需要收货地址</label>
+                <select class="form_select province" name="province" elwidth='154' itemWidth="152" rowCount="8">
+                    <option value="">是</option>
+                    <option>否</option>
+                </select>
+            </div>
+            <div class="reward_solo">
+            	<label>预计发货</label>
+                <input class="form_text" type="text" placeholder="100"><em>天</em><em>（从筹集成功到开始发送回报的间隔天数）</em>
+            </div>
+        </div>
+        <div class="reward_right">
+        	<h2>预览回报</h2>
+            <div class="pro_detail_right_box">
+                <div class="support_tit">
+                    <span class="left"><em>23000</em>元</span>
+                    <span class="right_doub"><i>已支持<em>10</em>份</i><i>剩余<em>5</em>份</i></span>
+                </div>
+                <p>位于楼的主席台是北京重要商业宴请与高尚私人聚会的最佳地点。拥有专属电梯，设有16间专属私人贵宾厅提供传统广东粤菜及管家服务，更有多间附属户外露台的私人贵宾厅，最多可容纳24的悦·健身中心拥有平方米的健身空间设有可开放式的玻璃天花。</p>
+                <p>[ 回报发送时间：项目成功结束后<em>10</em>天 ]</p>
+                <div class="support_img">
+                    <img src="../../img/img.jpg">
+                    <img src="../../img/img.jpg">
+                    <img src="../../img/img.jpg">
+                </div>
+                <a class="form_btn">支持</a>
+            </div>
+        </div>
+    </div>
+    <!-- end -->
+    <!-- 方案开始 -->
+	<div class="reward_plan_box">
+    	<div class="reward_tit">
+        	<h2>回报方案2</h2>
+            <a class="form_btn">删除</a>
+        </div>
+        <div class="reward_left">
+        	<div class="reward_je">
+            	<label>支持的金额</label>
+                <input class="form_text" type="text" placeholder="100"><em>元</em>
+            </div>
+            <div class="reward_fs">
+            	<label>是否限份数</label>
+                <select class="form_select province" name="province" elwidth='154' itemWidth="152" rowCount="8">
+                    <option value="">是</option>
+                    <option>否</option>
+                </select>
+                <input class="form_text" type="text" placeholder="100"><em>份</em>
+            </div>
+            <div style="clear:both;"></div>
+            <div class="reward_solo">
+            	<label>限制单个用户支持份数</label>
+                <input class="form_text" type="text" placeholder="100"><em>不输入则默认为不限制</em>
+            </div>
+            <div class="reward_solo">
+            	<label>回报描述</label>
+                <textarea class="form_textarea" placeholder="请输入关键词标签，便于搜索"></textarea>
+            </div>
+            <div class="reward_solo">
+            	<label>回报产品</label>
+                <div class="product_img_box">
+                	<div class="product_img">
+                		<img src="../../img/img.jpg">
+                        <i></i>
+                    </div>
+                    <div class="product_img">
+                		<img src="../../img/img.jpg">
+                        <i></i>
+                    </div>
+                    <div class="product_img">
+                		<img src="../../img/img.jpg">
+                        <i></i>
+                    </div>
+                </div>
+                <p>(大小不要超过1M ，建议图片尺寸：600*440px)</p>
+            </div>
+            <div class="reward_solo">
+            	<label>是否需要收货地址</label>
+                <select class="form_select province" name="province" elwidth='154' itemWidth="152" rowCount="8">
+                    <option value="">是</option>
+                    <option>否</option>
+                </select>
+            </div>
+            <div class="reward_solo">
+            	<label>预计发货</label>
+                <input class="form_text" type="text" placeholder="100"><em>天</em><em>（从筹集成功到开始发送回报的间隔天数）</em>
+            </div>
+        </div>
+        <div class="reward_right">
+        	<h2>预览回报</h2>
+            <div class="pro_detail_right_box">
+                <div class="support_tit">
+                    <span class="left"><em>23000</em>元</span>
+                    <span class="right_doub"><i>已支持<em>10</em>份</i><i>剩余<em>5</em>份</i></span>
+                </div>
+                <p>位于楼的主席台是北京重要商业宴请与高尚私人聚会的最佳地点。拥有专属电梯，设有16间专属私人贵宾厅提供传统广东粤菜及管家服务，更有多间附属户外露台的私人贵宾厅，最多可容纳24的悦·健身中心拥有平方米的健身空间设有可开放式的玻璃天花。</p>
+                <p>[ 回报发送时间：项目成功结束后<em>10</em>天 ]</p>
+                <div class="support_img">
+                    <img src="../../img/img.jpg">
+                    <img src="../../img/img.jpg">
+                    <img src="../../img/img.jpg">
+                </div>
+                <a class="form_btn">支持</a>
+            </div>
+        </div>
+    </div>
+    <!-- end -->
+    <div class="reward_bottom">
+    	<p><input class="form_checkbox" type="checkbox"><em>启用无偿支持，不予回报</em><em>（您不需要为无偿支持的支持者付出回报，游客可免登陆支持，最多支持1000元）</em></p>
+        <a class="form_btn"><em></em>新增一个回报选项</a>
+    </div>
+    <div id="in_basic_btn">
+    	
+        <input type="button" class="form_btn" value="下一步">
+        <input type="button" class="form_btn" value="保&nbsp;&nbsp;存">
+    </div>
+</div>
+<!--footer -->
+<div id="footer">
+	<div class="footer_nav">
+    	<a>关于我们</a>
+        <a>新手指引</a>
+        <a>合作伙伴</a>
+        <a class="last">隐私保护</a>
+        <span>浙ICP备15004899号-1  |  咪咕数字传媒有限公司所有</span>    
+    </div>
+</div>
+</body>
+</html>

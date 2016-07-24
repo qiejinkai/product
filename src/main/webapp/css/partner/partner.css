@@ -1,0 +1,41 @@
+/*
+ *张展
+ *2015-08-13
+ *合作伙伴
+ */
+@charset "utf-8";
+
+#partner_right{
+	width:1040px;
+	padding:0 30px;
+}
+#partner_right .partner_right_nav{
+	padding-top:12px;
+	line-height:50px;
+	border-bottom:1px solid #eeeeee;
+	color:#999999;
+}
+#partner_right .partner_right_nav em{
+	color:#333;
+}
+.partner_right_content{
+	width:100%;
+}
+.partner_right_content ul{
+	width:945px;
+	height:auto;
+	overflow:hidden;
+	display:block;
+	border-top:1px solid #eeeeee;
+	border-left:1px solid #eeeeee;
+	margin:30px 0 40px 45px;
+}
+.partner_right_content ul li{
+	float:left;
+	width:120px;
+	height:86px;
+	padding:40px 34px;
+	overflow:hidden;
+	border-right:1px solid #eeeeee;
+	border-bottom:1px solid #eeeeee;
+}

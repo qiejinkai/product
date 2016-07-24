@@ -15,9 +15,9 @@ import com.qjk.data.User;
 @Repository
 public class UserDaoRedisImpl extends AbstractBaseRedisDao<String, User> implements IUserDao {
 
-	public void insert( final User user) {
+	public void addUser( final User user) {
 		
-		 boolean result = redisTemplate.execute(new RedisCallback<Boolean>() {  
+		  redisTemplate.execute(new RedisCallback<Boolean>() {  
 	            public Boolean doInRedis(RedisConnection connection)  
 	                    throws DataAccessException {  
 	                RedisSerializer<String> serializer = getRedisSerializer();  
@@ -29,19 +29,24 @@ public class UserDaoRedisImpl extends AbstractBaseRedisDao<String, User> impleme
 		
 	}
 
-	public void delete(long id) {
+	public void deleteUser(long id) {
 		// TODO Auto-generated method stub
 		
 	}
 
-	public User selectOne(long id) {
+	public User findUserById(long id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	public List<User> select() {
+	public List<User> selectUsers() {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+	public void updateUser(User u) {
+		// TODO Auto-generated method stub
+		
 	}
 	
 	

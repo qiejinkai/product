@@ -1,0 +1,91 @@
+/*
+ *张展
+ *2015-10-14
+ *我发起的
+ */
+ 
+
+
+
+/** 我发起的 支持者 **/
+/*user_item*/
+#user_list{
+	overflow:hidden;
+	width:940px;
+}
+.user_item{
+	padding:26px 0px;
+	height:62px;
+	overflow:hidden;
+	width:420px;
+	margin-right:50px;
+	float:left;
+	border-bottom:1px dashed #e7e7e7;
+	}
+.user_img{
+	width:62px;
+	height:62px;
+	float:left;
+	border-radius:50%;
+	overflow:hidden;
+}
+.user_img img{
+	width:100%;
+}
+.user_infos{
+	width:345px;
+	padding-top:6px;
+	float:right;
+}
+.user_infos span{
+	float:right;
+	font-size:14px;
+}
+.user_infos em{
+	float:left;
+	font-size:14px;
+}
+
+.user_infos h2{
+	height:26px;
+	line-height:26px;
+	overflow:hidden;
+}
+.user_infos h2 em{
+	color:#333;
+	font-size:16px;
+}
+.user_infos h2 i.sp_1{
+	padding:0 3px;
+	border:1px solid #26bfc1;
+	color:#26bfc1;
+	height:18px;
+	line-height:18px;
+	float:left;
+	margin:4px 0 0 5px;
+	font-size:14px;
+}
+.user_infos h2 span{
+	color:#26bfc1;
+	font-size:18px;
+	
+}
+.user_infos h2 span i{
+	color:#26bfc1;
+	font-size:18px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.user_infos p{
+	height:26px;
+	line-height:26px;
+	overflow:hidden;
+	color:#999999;
+}
+
+.me_order_record h3 span{
+	float:right;
+}
+.me_order_record h3 span em{
+	color:#333;
+	margin-left:50px;
+}

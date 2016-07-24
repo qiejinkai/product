@@ -10,17 +10,29 @@ import javax.validation.constraints.NotNull;
  * @author qiejinkai
  *
  */
-public class UserOptions extends Data implements Serializable{
+public class UserOption implements Serializable{
 
 	/**
 	 * 版本号
 	 */
 	private static final long serialVersionUID = 1L;
 
-	public UserOptions() {
+	public UserOption() {
 		// TODO Auto-generated constructor stub
 	}
 	
+	private long optionId;
+	
+	
+	
+	public long getOptionId() {
+		return optionId;
+	}
+
+	public void setOptionId(long optionId) {
+		this.optionId = optionId;
+	}
+
 	private String uid;
 	
 	private String name ;

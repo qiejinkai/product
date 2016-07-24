@@ -8,15 +8,12 @@
 	
 	<typeAliases>
  		<typeAlias alias="User" type="com.qjk.data.User"/>
- 		<typeAlias alias="UserOptions" type="com.qjk.data.UserOptions"/>
-<!-- 	<typeAlias alias="MoodVo" type="com.qjk.entiy.MoodVo"/>
-		<typeAlias alias="Article" type="com.qjk.entiy.Article"/>
-		<typeAlias alias="ArticleVo" type="com.qjk.entiy.ArticleVo"/>
-		<typeAlias alias="Counter" type="com.qjk.entiy.Counter"/> -->
+ 		<typeAlias alias="UserOption" type="com.qjk.data.UserOption"/>
 	</typeAliases>
 	
 	<!-- 指定映射文件-->
 	<mappers>
-	<mapper resource="com/qjk/dao/sqlmap/user-sqlmap-mapping.xml"></mapper>
+		<mapper resource="com/qjk/dao/sqlmap/user-sqlmap-mapping.xml"></mapper>
+		<mapper resource="com/qjk/dao/sqlmap/useroption-sqlmap-mapping.xml"></mapper>
 	</mappers> 
 </configuration>

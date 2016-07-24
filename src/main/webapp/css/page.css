@@ -1,0 +1,113 @@
+/*
+ *张展
+ *2015-10-10
+ *分页样式
+ */
+@charset "utf-8";
+.page{
+	width:100%;
+	height:28px;
+	line-height:28px;
+	overflow:hidden;
+	text-align:right;
+	padding:60px 0 120px;
+}
+.page_left{
+	
+	float:right;
+}
+.page_left a{
+	color:#999;
+	padding:0 8px;
+	display:inline-block;
+	line-height:28px;
+	float:left;
+}
+.page_left a:hover{
+	color:#26bfc1;
+}
+
+a.prev_page, a.next_page{
+	display:inline-block;
+	height:28px;
+	width:12px;
+	background:url(../img/page/page_ico.png) top center no-repeat;
+}
+a.prev_page:hover{
+	background-position:center -100px;
+	}
+a.next_page{
+	background-position:center -50px;
+}
+
+a.next_page:hover{
+	background-position:center -150px;
+	}
+	
+	
+.page a:hover{
+	color:#26bfc1;
+}
+.page_left em{
+	font-size:20px;
+	color:#26bfc1;
+	overflow:hidden;
+	padding:0 2px;
+	float:left;
+	display:inline-block;
+	line-height:28px;
+}
+.page_left span{
+	font-size:20px;
+	overflow:hidden;
+	padding:0 2px;
+	float:left;
+	display:inline-block;
+	line-height:28px;
+}
+
+/**/
+.page_form{
+	float:right;
+	margin-left:40px;
+}
+.page_form .page_text{
+	float:left;
+	height:26px;
+	border:1px solid #e5e5e5;
+	width:50px;
+	outline:none;
+	text-align:center;
+	font-size:18px;
+	color:#26bfc1;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.page_form em{
+	float:left;
+	display:inline-block;
+	margin:0 10px;
+	line-height:28px;
+	color:#999;
+}
+.page_btn{
+	width:28px;
+	border-radius:1px;
+	background-color:#26bfc1;
+	line-height:28px;
+	height:28px;
+	color:#fff;
+	text-align:center;
+	font-size:14px;
+	font-family:Arial, Helvetica, sans-serif;
+	display:inline-block;
+	border:0px;
+	cursor:pointer;
+	float:left;
+	outline:none;
+	}
+.page_btn:hover{
+	background-color:#29cdcf;
+}
+.page_btn:active {
+	background-color:#1bacae;
+}

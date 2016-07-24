@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>基本信息-发起项目</title>
+<link rel="stylesheet" type="text/css" href="../../css/reset.css" />
+<link rel="stylesheet" type="text/css" href="../../css/project_item.css" />
+<link rel="stylesheet" type="text/css" href="../../css/in/in_basic.css" />
+<script type="text/javascript" src="../../js/jquery.mini.js"></script>
+<script type="text/javascript" src="../../js/jquery.select.js"></script>
+</head>
+<body>
+<!--header-->
+<div id="header">
+	<div class="header">
+    	<a class="logo" href="/"></a>
+        <div class="header_r">
+        	<div class="header_search">
+            	<input type="text" class="search_text" />
+                <input type="button" class="header_btn" />
+            </div>
+            <div class="header_login" style="display:none;">
+            	<a>注册</a>
+                <a>登录</a>            	
+            </div>
+            <div class="header_user">
+            	<div class="header_logo">
+                	<em>
+                    	<img src="../img/default_logo.png" />                        
+                    </em>
+                    <i>89</i>
+                    <span>
+                    	高小明
+                    </span>
+                </div>
+                <div class="user_nav" id="user_nav">
+                	<em></em>
+                	<ul>
+                    	<li><a>我发起的</a></li>
+                        <li><a>我支持的</a></li>
+                        <li><a>我的消息</a></li>
+                        <li><a>个人资料</a></li>
+                        <li><a>安全退出</a></li>
+                	</ul>
+                </div>
+                <script>
+                	$(function(){
+						$('.header_logo').hover(function(){
+							$('#user_nav').show();							
+							});
+							$('#user_nav').bind("mouseleave",function(){
+							$('#user_nav').hide();							
+							});
+						
+						});
+                </script>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<!--header_nav-->
+<div id="header_nav">
+	<div class="header_nav">
+    	<em>
+            <a>首页</a>
+            <a class="selected" id="more_porject">浏览项目</a>
+            <a>发起项目</a>
+            <a class="last">帮助中心</a>
+        </em>
+        <span>客户电话：400-086-4896</span>
+        <div class="user_nav" id="more_porject_ul">
+                	<em></em>
+                	<ul>
+                    	<li><a>武侠出版</a></li>
+                        <li><a>现代都市</a></li>
+                        <li><a>玄幻奇幻</a></li>
+                        <li><a>校园青春</a></li>
+                        <li><a>网络英雄</a></li>
+                	</ul>
+       </div>
+       
+        <script>
+                	$(function(){
+						$('#more_porject').hover(function(){
+							$('#more_porject_ul').show();							
+							});
+							$('#more_porject_ul').bind("mouseleave",function(){
+							$('#more_porject_ul').hide();							
+							});
+						
+						});
+                </script>
+    </div>
+</div>
+<!--  banner   -->
+<div id="in_com_nav">
+	<div class="warp">
+    	<ul>
+        	<li class="selected">
+            	<span>01</span>
+            	<em>/基本信息</em>
+            </li>
+            <li>
+            	<span>02</span>
+            	<em>/回报方案</em>
+            </li>
+            <li>
+            	<span>03</span>
+            	<em>/项目详情</em>
+            </li>
+        </ul>
+        <p>
+        	<a>发起项目规范</a>
+            <a>发起人须知</a>
+        </p>
+    
+    </div>
+
+</div>
+<!--in_bannar-->
+<div class="warp">
+	<div id='in_basic_left'>
+    	<h1>项目预览图片</h1>
+        <div class="form_upload">
+        	<p>点击上传图片</p>
+        
+        </div>
+        <div class="basic_notice">
+        （大小不要超过1M ，建议图片尺寸：600*440px）
+        </div>
+        <h1>项目标题</h1>
+        <div class="basic_filed">
+        	<input type="text" class="form_text basic_title" placeholder="简洁明确的标题，不超过25个汉字" />
+        </div>
+        <h1>项目简介</h1>
+         <div class="basic_filed">
+         	<textarea type="text" class="form_text basic_summary" placeholder="简洁明确的标题，不超过25个汉字"></textarea>
+        </div>
+        <h1 class="basic_classify_title">
+        	<span>项目类别</span>
+            <em>所在地区</em>
+        </h1>
+        <div class="basic_filed">
+        	<div class="basic_classify">
+                <select class="form_select province" name="province" elwidth='324' itemWidth="321" rowCount="8">
+                    <option value="">请选择</option>
+                </select>
+            </div>
+            <div class="basic_city">
+            	<select class="form_select province" name="province" elwidth='154' itemWidth="151" rowCount="8">
+                    <option value="">请选择省份</option>
+                </select>
+                <select class="form_select province" name="province" elwidth='154' itemWidth="151" rowCount="8">
+                    <option value="">请选择省份</option>
+                </select>
+            </div>            
+        </div>
+        
+        <h1 class="basic_tags_title">
+        	<span>项目标签</span>
+            <em>筹集天数</em>
+        </h1>
+        <div class="basic_filed">
+        	<div class="basic_tags">
+                <input type="text" class="form_text basic_text_tags" placeholder="最多可输入3个标签关键字，多个标签请用空格隔开" />
+               
+            </div>
+            <div class="basic_day">
+            	<input type="text" class="form_text basic_text_day" placeholder="30" />    
+                <em>天</em>        	
+            </div>            
+        </div>
+        
+         
+        <h1 class="basic_classify_title">
+        	<span>最少筹集金额</span>
+            <em>目标筹集金额</em>
+        </h1>
+        <div class="basic_filed">
+        	<div class="basic_least">
+                <input type="text" class="form_text basic_text_least" placeholder="100" />
+                <em>元</em> 
+               
+            </div>
+            <div class="basic_target">
+            	<input type="text" class="form_text basic_text_target" placeholder="30" />    
+                <em>元</em>        	
+            </div>            
+        </div>
+        
+        <div class="in_basic_notice">
+            <p>
+                解释：<br />
+                最少筹集金额为判定项目是否成功的标准，目标筹集金额为判断项目进度的标准，列入：最少筹集金额和目标筹集金额相同，到期时项目完成100%算成功。
+            </p>
+    </div>
+
+    
+    
+    
+  
+    </div>
+    <!-- in_basic_left -->
+    <div id="in_basic_right">
+    	<h1>预览项目单元</h1>
+    	<div class="succ_pro_list_box">
+            <div class="succ_pro_list_img">
+                <img src="../../img/img.jpg">
+                <i class="sp">筹集中</i>
+            </div>
+            <div class="succ_pro_list_text">
+                <h2>你幸福就好苏奕站在他觉得的大门前犹徊</h2>
+                <p>她足以让你的客厅成为电影院;她，令电视机成为摆设的机会都丧失;因为，只要她</p>
+                <div class="label_wrap">
+                	<span>发起人：</span><em>明天出版社</em><i class="dian"></i><em>北京</em><em>文艺/原创/设计师</em>
+           	 	</div>
+                <div class="pro_list_prosess">
+                    <span></span>
+                </div>
+                <div class="pro_list_bottom">
+                    <ul>
+                        <li><span><em>100</em><i>%</i></span><span>已完成</span></li>
+                        <li><span><em>00000</em><i>￥</i></span><span>已筹集</span></li>
+                        <li><span><em>11</em><i>day</i></span><span>剩余</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    <!-- in_basic_right -->
+    <div id="in_basic_btn">
+    	
+        <input type="button" class="form_btn" value="下一步" />
+        <input type="button" class="form_btn" value="保&nbsp;&nbsp;存" />
+    </div>
+    <!--in_basic_btn -->
+</div>
+<!--footer -->
+<div id="footer">
+	<div class="footer_nav">
+    	<a>关于我们</a>
+        <a>新手指引</a>
+        <a>合作伙伴</a>
+        <a class="last">隐私保护</a>
+        <span>浙ICP备15004899号-1  |  咪咕数字传媒有限公司所有</span>    
+    </div>
+</div>
+</body>
+</html>

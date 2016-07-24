@@ -1,0 +1,99 @@
+/*
+ *张展
+ *2015-10-14
+ *我发起的
+ */
+ 
+
+
+/** 我发起的 订单详情 **/
+.me_order_detail{
+	overflow:hidden;
+	padding:20px 0;
+	min-height:426px;
+}
+.me_order_detail h3{
+	font-size:16px;
+	line-height:40px;
+	padding-bottom:10px;
+}
+ul.tab_record{
+	width:870px;
+	height:auto;
+	padding:0 10px;
+	background-color:#f3f3f3;
+	display:block;
+	overflow:hidden;
+}
+ul.tab_record li{
+	line-height:45px;
+	width:120%;
+	display:block;
+	overflow:hidden;
+}
+ul.tab_record li.top{
+	border-bottom:1px dashed #e7e7e7;
+}
+ul.tab_record li span{
+	float:left;
+	display:block;
+	font-size:14px;
+	color:#999;
+	line-height:45px;
+}
+ul.tab_record li span em{
+	font-size:14px;
+	color:#26bfc1;
+}
+ul.tab_record li span i{
+	font-size:14px;
+	color:#333;
+}
+ul.tab_record li span.list_1{
+	width:280px;
+}
+ul.tab_record li span.list_2{
+	width:250px;
+}
+ul.tab_record li span.list_3{
+	width:180px;
+}
+.order_item_box{
+	padding:20px 0;
+}
+.order_item{
+	position:relative;
+	padding:10px 0 10px 105px;
+	min-height:20px;
+}
+.order_item label{
+	width:100px;
+	font-size:14px;
+	line-height:20px;
+	text-align:right;
+	color:#999;
+	position:absolute;
+	top:10px;
+	left:0;
+}
+.order_item span{
+	font-size:14px;
+	color:#333;
+	line-height:20px;
+}
+
+.order_detail_btn{
+	padding:45px 0 30px;
+	border-top:1px dashed #e7e7e7;
+	text-align:right;
+}
+
+.order_detail_tip{
+	line-height:22px;
+	color:#26bfc1;
+	margin:30px 0 35px;
+	font-size:14px;
+	background:#ddf4f4;
+	border:1px solid #26bfc1;
+	padding:10px 15px;	
+}

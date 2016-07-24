@@ -87,6 +87,12 @@
 	<bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
 		<constructor-arg name="sqlSessionFactory" ref="sqlSessionFactory" />
 	</bean>
+	
+	<!-- 开启面向接口编程 -->
+<!-- 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">  
+        <property name="sqlSessionFactory"  ref="sqlSessionFactory"/>  
+        <property name="basePackage" value="com.qjk.dao"></property>  
+    </bean>  -->
 
 
 	<!-- 开启事务注解驱动 -->
@@ -109,12 +115,11 @@
 			<tx:method name="add*" propagation="REQUIRED" />
 			<tx:method name="delete*" propagation="REQUIRED" />
 			<tx:method name="update*" propagation="REQUIRED" />
-			<tx:method name="do*" propagation="REQUIRED" />
-			<tx:method name="find*" read-only="true" />
-			<tx:method name="load*" read-only="true" />
 			<tx:method name="*" rollback-for="Exception" />
 		</tx:attributes>
 	</tx:advice>
+	
+
 
 
 </beans>

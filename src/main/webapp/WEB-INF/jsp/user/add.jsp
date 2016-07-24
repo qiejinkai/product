@@ -8,10 +8,10 @@
 	<h2>添加用户</h2>
 	
 	<sf:form method="post" modelAttribute="user">
-		id:<sf:input path="objectId"/><sf:errors path="objectId"/><br/>
 		nick:<sf:input path="nick"/><sf:errors path="nick"/><br/>
 		phone:<sf:input path="phone"/><sf:errors path="phone"/><br/>
 		email:<sf:input path="email"/><sf:errors path="email"/><br/>
+		password:<sf:password path="password"/><sf:errors path="password"/><br/>
 		<input type="submit" value="commit">
 	
 	</sf:form>

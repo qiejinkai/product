@@ -1,0 +1,76 @@
+/*
+ *张展
+ *2015-10-26
+ *协议
+ */
+@charset "utf-8";
+
+
+.agreement_box{
+	width:940px;
+	height:auto;
+	padding:0 80px 50px 80px;
+}
+.agreement_box h1{
+	font-size:28px;
+	line-height:50px;
+	color:#333;
+	text-align:center;
+	padding:20px 0 25px 0;
+}
+.agreement_box h2{
+	font-size:16px;
+	padding:40px 0 20px 0;
+}
+.agreement_box p{
+	width:940px;
+	line-height:32px;
+	font-size:16px;
+	display:block;
+	position:relative;
+	text-indent:2em;
+	
+}
+.agreement_box span{
+	display:block;
+	margin-left:30px;
+}
+
+.agreement_box p.ag_summary{
+	text-indent:2em;
+}
+.agreement_box span.ag_numb1{
+	position:absolute;
+	top:0;
+	left:0;
+	width:30px;
+	height:30px;
+	margin:0;
+}
+.agreement_box span.ag_numb2{
+	position:absolute;
+	top:0;
+	left:0;
+	width:40px;
+	height:30px;
+	margin:0;
+	padding-left:30px;
+}
+.agreement_box span.ag_txt2{
+	margin-left:70px;
+}
+.agreement_box span.ag_numb3{
+	position:absolute;
+	top:0;
+	left:0;
+	width:30px;
+	height:30px;
+	margin:0;
+	padding-left:60px;
+}
+.agreement_box span.ag_txt3{
+	margin-left:90px;
+}
+.agreement_content p.txt{
+	text-indent:2em;
+}

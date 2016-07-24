@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>首页</title>
+<link rel="stylesheet" type="text/css" href="../../css/reset.css" />
+<link rel="stylesheet" type="text/css" href="../../css/in/in_index.css" />
+<script type="text/javascript" src="../../js/jquery.mini.js"></script>
+</head>
+<body>
+<!--header-->
+<div id="header">
+	<div class="header">
+    	<a class="logo" href="/"></a>
+        <div class="header_r">
+        	<div class="header_search">
+            	<input type="text" class="search_text" />
+                <input type="button" class="header_btn" />
+            </div>
+            <div class="header_login" style="display:none;">
+            	<a>注册</a>
+                <a>登录</a>            	
+            </div>
+            <div class="header_user">
+            	<div class="header_logo">
+                	<em>
+                    	<img src="../img/default_logo.png" />                        
+                    </em>
+                    <i>89</i>
+                    <span>
+                    	高小明
+                    </span>
+                </div>
+                <div class="user_nav" id="user_nav">
+                	<em></em>
+                	<ul>
+                    	<li><a>我发起的</a></li>
+                        <li><a>我支持的</a></li>
+                        <li><a>我的消息</a></li>
+                        <li><a>个人资料</a></li>
+                        <li><a>安全退出</a></li>
+                	</ul>
+                </div>
+                <script>
+                	$(function(){
+						$('.header_logo').hover(function(){
+							$('#user_nav').show();							
+							});
+							$('#user_nav').bind("mouseleave",function(){
+							$('#user_nav').hide();							
+							});
+						
+						});
+                </script>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<!--header_nav-->
+<div id="header_nav">
+	<div class="header_nav">
+    	<em>
+            <a>首页</a>
+            <a class="selected" id="more_porject">浏览项目</a>
+            <a>发起项目</a>
+            <a class="last">帮助中心</a>
+        </em>
+        <span>客户电话：400-086-4896</span>
+        <div class="user_nav" id="more_porject_ul">
+                	<em></em>
+                	<ul>
+                    	<li><a>武侠出版</a></li>
+                        <li><a>现代都市</a></li>
+                        <li><a>玄幻奇幻</a></li>
+                        <li><a>校园青春</a></li>
+                        <li><a>网络英雄</a></li>
+                	</ul>
+       </div>
+       
+        <script>
+                	$(function(){
+						$('#more_porject').hover(function(){
+							$('#more_porject_ul').show();							
+							});
+							$('#more_porject_ul').bind("mouseleave",function(){
+							$('#more_porject_ul').hide();							
+							});
+						
+						});
+                </script>
+    </div>
+</div>
+<!--  banner   -->
+<div class="warp">
+    <div id="in_phone">
+        <div class="phone_ico success_ico"></div>
+        <h4>项目提交成功，完成审核后项目即可上线</h4>
+        <a class="form_btn">返回首页</a>
+         <a class="form_btn">管理我的项目</a>
+    </div>
+    <div class="in_sure_notice">
+        <p>
+            提示：<br />
+            1. 请填写真实、完整的项目信息，这将提升项目审核工作的效率，并能显著提高项目审核通过率。<br />
+            2. 平台会为本项目提供审核、发布等服务，将收取少量的服务费，平台会主动与您联系确定相关事宜。<br />
+            3. 筹集金额达到最低筹集目标，视为项目筹集成功，您需要履行缴付服务费、发出回报等义务；筹集金额低于最低筹集目标，视为项目筹集失败，已筹集资金将自动退还给支持者。
+        </p>
+    </div>
+</div>
+<!--in_bannar-->
+
+<!--footer -->
+<div id="footer">
+	<div class="footer_nav">
+    	<a>关于我们</a>
+        <a>新手指引</a>
+        <a>合作伙伴</a>
+        <a class="last">隐私保护</a>
+        <span>浙ICP备15004899号-1  |  咪咕数字传媒有限公司所有</span>    
+    </div>
+</div>
+</body>
+</html>

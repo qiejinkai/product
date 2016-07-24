@@ -1,0 +1,22 @@
+/*
+ *张展
+ *2015-10-16
+ *成功提醒
+ */
+@charset "utf-8";
+
+
+.warp{
+	text-align:center;
+}
+.warp .icon_100{
+	margin:180px 0 30px;
+}
+.warp h2{
+	font-size:26px;
+	margin-bottom:10px;
+}
+.warp a.form_btn{
+	margin:50px 15px 100px;
+	width:118px;
+}

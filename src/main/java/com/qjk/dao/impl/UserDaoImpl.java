@@ -7,34 +7,39 @@ import org.springframework.stereotype.Repository;
 import com.qjk.dao.IUserDao;
 import com.qjk.data.User;
 
-
 /**
  * 
  * @author qiejinkai
  *
  */
 @Repository
-public class UserDaoImpl extends BaseDaoImpl implements IUserDao {
+public class UserDaoImpl extends BaseDaoImpl<User> implements IUserDao {
 
-	public void insert(User user) {
-		
-		this.sqlSessionTemplate.insert("insert",user);
-		
+	public void addUser(User user) {
+
+		sqlSessionTemplate.insert("insertUser",user);
+
 	}
 
-	public void delete(long id) {
-		// TODO Auto-generated method stub
+	public void deleteUser(long id) {
+
+		sqlSessionTemplate.delete("deleteUser",id);
+
+	}
+
+	public User findUserById(long id) {
+
+		return sqlSessionTemplate.selectOne("selectUser", id);
+	}
+
+	public List<User> selectUsers() {
+
+		return sqlSessionTemplate.selectList("selectUserList");
+	}
+
+	public void updateUser(User user) {
 		
-	}
-
-	public User selectOne(long id) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public List<User> select() {
-		// TODO Auto-generated method stub
-		return null;
+		sqlSessionTemplate.update("updateUser", user);
 	}
 
 }

@@ -1,0 +1,116 @@
+/*
+ *张展
+ *发起项目
+ *2015-10-14
+ */
+ 
+ 
+/*in_details_main*/
+.in_details_main{
+	margin-top:60px;
+}
+.in_details_main h1{
+	line-height:40px;
+	font-size:16px;
+}
+.in_details_main h1 em{
+	font-size:14px;
+	color:#999;
+	padding-left:8px;
+}
+.in_details_main h1 em a{
+	font-size:14px;
+	color:#26bfc1;
+	padding:0 3px;
+}
+.banner_thumb{
+	width:1100px;
+	height:257px;
+	overflow: hidden;
+	background:#eee url(../../img/in/upload_tip_bg.png) no-repeat center center;
+	position:relative;
+}
+.banner_thumb img{
+	width:100%;
+}
+.banner_thumb p{
+	position:absolute;
+	top:0;
+	width:100%;
+	height:100%;
+	text-align:center;
+	left:0px;
+	line-height:257px;
+	z-index:1;
+	font-size:16px;
+	color:#fff;
+	background-color:rgba(0,0,0,0.6);
+	display:none;	
+}
+.in_details_main h2{
+	font-size:14px;
+	padding:20px 0 10px;
+	color:#333;
+}
+.in_details_main h2 em{
+	font-size:14px;
+	color:#999;
+}
+.basic_filed input.form_text{
+	width:670px;
+}
+.basic_filed em{
+	font-size:14px;
+	color:#999;
+	padding-left:10px;
+}
+#form_textarea{
+	height:436px;
+	margin-bottom:25px;
+	width:1100px;
+	overflow-x:hidden;
+	overflow-y:scroll;
+}
+#form_textarea textarea{
+	height:436px;
+	width:1000px;
+}
+
+/*in_basic_left*/
+
+.dialog_box{
+	position:fixed;
+	top:50%;
+	left:50%;
+	margin-left:-550px;
+	margin-top:-334px;
+	z-index:101;
+	width:1100px;
+	overflow:hidden;
+	display:none;
+}
+.dialog_box h2{
+	font-size:26px;
+	color:#fff;
+	border-bottom:1px solid rgba(255,255,255,0.15);
+	line-height:46px;
+}
+.gallery{
+	width:110%;
+	overflow:hidden;
+	padding-bottom:40px;
+}
+.gallery img{
+	float:left;
+	margin:40px 64px 0 0;
+	width:514px;
+	height:116px;
+	display:block;
+	border:2px solid rgba(255,255,255,0);
+}
+.gallery img.selected{
+	border:2px solid #26bfc1;	
+}
+.dialog_box #in_basic_btn{
+	border-top:1px solid rgba(255,255,255,0.15);
+}

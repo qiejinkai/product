@@ -1,0 +1,144 @@
+/*
+ *张展
+ *2015-10-14
+ *我发起的
+ */
+ 
+
+
+/** 我发起的 回报 **/
+.payback_notice{
+	width:888px;
+	border:1px solid #26bfc1;
+	background-color:#ddf4f4;
+	margin-top:30px;
+}
+.payback_notice p{
+	line-height:26px;
+	padding:15px;
+	color:#12bfc2;
+	font-size:14px;
+}
+.me_payback_record{
+	overflow:hidden;
+	padding:20px 0;
+	min-height:426px;
+}
+.me_payback_record h3{
+	font-size:16px;
+	line-height:40px;
+	padding-bottom:10px;
+	position:relative;
+}
+.me_payback_record h3 i{
+	font-size:16px;
+	color:#26bfc1;
+	padding:0 3px;
+}
+.me_payback_record h3 em{
+	font-size:14px;
+	color:#999;
+	padding-left:5px;
+}
+.me_payback_record h3 em i{
+	font-size:14px;
+}
+.me_payback_record h3 span{
+	float:right;
+}
+.me_payback_record h3 span em{
+	font-size:16px;
+	color:#333;
+	margin-left:30px;
+}
+.me_payback_record h3 span em i{
+	font-size:16px;
+}
+.me_payback_record p{
+	line-height:30px;
+}
+.me_payback_record p a{
+	font-size:14px;
+	color:#26bfc1;
+}
+.me_payback_record p em{
+	color:#ddd;
+	padding:0 20px;
+	font-size:14px;
+}
+.me_payback_record ul{
+	display:table;
+	border-bottom:1px dashed #e7e7e7;
+	overflow:hidden;
+	width:100%;
+	padding:30px 0;
+	
+}
+.me_payback_record ul.me_payback_top{
+	margin-top:10px;
+	background-color:#f2f2f2;
+	color:#999;
+	border-bottom:none;
+	padding:0;
+}
+.me_payback_record ul li{
+	display:table-cell;
+	color:#333;
+	font-size:14px;
+	line-height:20px;
+	position:relative;
+	word-break:break-all;
+}
+.me_payback_record ul.me_payback_top li{
+	color:#999;
+	padding-top:0;
+	line-height:32px;
+}
+.me_payback_record ul.me_payback_top li.list_1{
+	text-indent:1em;
+}
+.me_payback_record ul li.list_1{
+	width:210px;
+}
+.me_payback_record ul li.list_2{
+	width:260px;
+	padding-right:55px;
+}
+.me_payback_record ul li.list_3{
+	width:200px;
+	padding-right:60px;
+}
+.me_payback_record ul li.list_4{
+	width:105px;
+	position:relative;
+}
+.me_payback_record ul li a.form_btn{
+	width:103px;
+	position:absolute;
+	top:10px;
+	left:0;
+}
+.header_img{
+	width:62px;
+	height:62px;
+	display:block;
+	float:left;
+	border-radius:50%;
+	overflow:hidden;
+}
+.header_img img{
+	width:100%;
+}
+.right_tent{
+	padding:6px 0 6px 70px;
+}
+.me_payback_record ul li p{
+	line-height:25px;
+}
+.me_payback_record h5 span{
+	float:right;
+}
+.me_payback_record ul li.list_4 em{
+	color:#999;
+	font-size:14px;
+}

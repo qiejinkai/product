@@ -1,0 +1,102 @@
+/*
+ *张龙
+ *2015-10-16
+ *icon
+ */
+@charset "utf-8";
+/*100*100*/
+.icon_100{
+	display:inline-block;
+	height:102px;
+	width:102px;
+	background:url(../img/icon/ico_100.png) top center no-repeat;
+}
+.icon_100_1{
+	background-position:0 -150px;
+}
+.icon_100_2{
+	background-position:0 -300px;
+}
+.icon_100_3{
+	background-position:0 -450px;
+}
+.icon_100_4{
+	background-position:0 -600px;
+}
+.icon_100_5{
+	background-position:0 -750px;
+}
+.icon_100_6{
+	background-position:0 -900px;
+}
+.icon_100_7{
+	background-position:0 -1050px;
+}
+.icon_100_8{
+	background-position:0 -1200px;
+}
+/*icon_60*/
+.icon_60{
+	display:inline-block;
+	height:60px;
+	width:60px;
+	background:url(../img/icon/ico_60.png) top center no-repeat;
+}
+.icon_60_1{
+	background-position:0 -100px;
+}
+
+/*icon_36*/
+.icon_36{
+	display:inline-block;
+	height:36px;
+	width:36px;
+	background:url(../img/icon/ico_36.png) top center no-repeat;
+}
+.icon_36_1{
+	background-position:0 -100px;
+}
+.icon_36_2{
+	background-position:0 -200px;
+}
+.icon_36_3{
+	background-position:0 -300px;
+}
+.icon_36_4{
+	background-position:0 -400px;
+}
+/**/
+/*icon_20*/
+.icon_20{
+	display:inline-block;
+	height:20px;
+	width:20px;
+	background:url(../img/icon/ico_20.png) top center no-repeat;
+}
+.icon_20_1{
+	background-position:0 -100px;
+}
+.icon_20_2{
+	background-position:0 -200px;
+}
+.icon_20_3{
+	background-position:0 -300px;
+}
+.icon_20_4{
+	background-position:0 -400px;
+}
+.icon_20_5{
+	background-position:0 -500px;
+}
+.icon_20_6{
+	background-position:0 -600px;
+}
+.icon_20_7{
+	background-position:0 -700px;
+}
+.icon_20_8{
+	background-position:0 -800px;
+}
+.icon_20_9{
+	background-position:0 -900px;
+}

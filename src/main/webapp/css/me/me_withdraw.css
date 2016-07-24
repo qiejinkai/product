@@ -1,0 +1,384 @@
+/*
+ *张展
+ *2015-10-12
+ *提现
+ */
+ 
+ 
+/*** 提现 ***/
+.right_top{
+	position:relative;
+}
+.right_top span.old{
+	height:20px;
+	font-size:14px;
+	background:url(../../img/icon/ico_20.png) no-repeat 0 -500px;
+	padding-left:25px;
+	position:absolute;
+	top:12px;
+	right:0;
+}
+.withdraw_inp{
+	width:100%;
+	padding:10px 0 15px 0;
+	border-bottom:1px dashed #eee;
+	font-size:14px;
+}
+.withdraw_inp .form_text{
+	margin-right:10px;
+	width:325px;
+}
+.withdraw_inp span{
+	height:40px;
+	line-height:40px;
+	display:block;
+	color:#999;
+}
+.withdraw_inp span em{
+	color:#26bfc1;
+}
+.bank_content{
+	padding-top:20px;
+}
+.bank_content h2{
+	font-size:16px;
+	color:#333;
+}
+.bank_state{
+	line-height:22px;
+	color:#26bfc1;
+	margin:15px 0 30px;
+	font-size:14px;
+	background:#ddf4f4;
+	border:1px solid #26bfc1;
+	padding:10px 15px;
+	
+}
+.bank_change_tit{
+	background:url(../../img/line_d5d5d5.png) repeat-x left bottom;
+	overflow:hidden;
+	width:800px;
+	display:block;
+}
+.bank_change_tit span{
+	height:30px;
+	line-height:30px;
+	float:left;
+	display:block;
+	font-size:14px;
+	color:#999;
+	margin-right:55px;	
+}
+.bank_change_tit span a{
+	color:#999;
+}
+.bank_change_tit span.selected{
+	color:#26bfc1;	
+	border-bottom:2px solid #26bfc1;
+}
+.bank_change_tit span.selected a{
+	color:#26bfc1;
+}
+.content{
+	padding:30px 0;	
+}
+.content ul.alipay_name{
+	width: 110%;
+	overflow: hidden;
+}
+.content ul.alipay_name li{
+	float:left;
+	width:378px;
+	height:88px;
+	line-height:23px;
+	font-size:18px;
+	margin:0 40px 10px 0;
+	border:1px solid #ddd;
+	position:relative;
+	overflow:hidden;
+}
+
+.content ul.alipay_name li a{
+	width:270px;
+	height:70px;
+	padding:21px 0 0 108px;
+	display:block;
+	color:#333;
+	font-size:14px;
+	
+}
+.me_right span.icon_60{
+	position:absolute;
+	top:15px;
+	left:26px;
+}
+
+.content ul.alipay_name li a em, .content ul.alipay_name li a .ap_style_2{
+	font-size:14px;
+	color:#666;
+}
+.content ul.alipay_name li.selected{
+	border:1px solid #26bfc1;
+}
+.content ul.alipay_name li.selected i{
+	display:block;
+}
+
+.content ul.alipay_name li.more{
+	background-color:#eee;
+	border:1px solid #eee;
+}
+.content ul.alipay_name li.more a{
+	background:url(../../img/bank_ten_icon.png) no-repeat 135px 37px;
+	padding:33px 0 0 159px;
+	font-size:14px;
+	color:#999;
+}
+
+/** 充值 recharge_content **/
+.recharge_content{
+	padding-top:20px;
+}
+.recharge_content h2{
+	font-size:16px;
+	color:#333;
+	padding-bottom:10px;
+}
+.recharge_inp_key, .recharge_inp_img{
+	padding-bottom:20px;
+	clear:both;
+}
+.recharge_inp_key label, .recharge_inp_img label{
+	width:85px;
+	float:left;
+	text-align:right;
+	font-size:14px;
+	margin-right:12px;
+	line-height:40px;
+}
+.recharge_inp_key input.form_text{
+	width:270px;
+}
+.recharge_inp_img input.form_text{
+	width:170px;
+	float:left;
+}
+.recharge_inp_img img{
+	width:88px;
+	height:38px;
+	border:1px solid #e7e7e7;
+	margin-left:10px;
+}
+.recharge_btn_box{
+	padding:20px 0 55px;
+	border-bottom:1px dashed #e7e7e7;
+}
+.withdraw_btn{
+	border-bottom:none;
+}
+
+.recharge_alipay{
+	padding-bottom:30px;
+	overflow:hidden;
+}
+.recharge_alipay img{
+	width:196px;
+}
+/** 快捷  **/
+ul.recharge_quick{
+	padding:0 0 30px;
+	display:block;
+	overflow:hidden;
+}
+ul.recharge_quick li{
+	height:28px;
+	line-height:28px;
+	float:left;
+	background:url(../../img/bank_icon.png) no-repeat;
+	margin-right:15px;
+	font-size:14px;
+}
+ul.recharge_quick li.list_1{
+	background-position:0 0;
+	padding-left:33px;
+}
+ul.recharge_quick li.list_2{
+	background-position:0 -38px;
+	padding-left:33px;
+}
+ul.recharge_quick li.list_3{
+	background-position:0 -76px;
+	padding-left:33px;
+}
+ul.recharge_quick li.list_4{
+	background-position:0 -117px;
+	padding-left:33px;
+}
+ul.recharge_quick li.list_5{
+	background-position:0 -155px;
+	padding-left:55px;
+}
+ul.recharge_quick li.list_6{
+	background-position:0 -187px;
+	padding-left:35px;
+}
+ul.recharge_quick li.list_7{
+	background-position:0 -221px;
+	padding-left:40px;
+}
+
+/** 添加银行卡 **/
+.add_card_content, .add_alipay_content{
+	width:800px;
+	overflow:hidden;
+}
+.add_card_content h2, .add_alipay_content h2{
+	padding:30px 0 20px 0;
+	font-size:16px;
+	color:#333;
+}
+.add_card_content ul, .add_alipay_content ul{
+	width:840px;
+	display:block;
+}
+.add_card_content ul li, .add_alipay_content ul li{
+	float:left;
+	line-height:23px;
+	font-size:14px;
+	border:1px solid #ddd;
+	position:relative;
+	width:270px;
+	height:70px;
+	padding:20px 0 0 108px;
+	display:block;
+	margin:0 40px 10px 0;	
+}
+.add_card_content span.sp_style_2, .add_alipay_content span.sp_style_2{
+	font-size:14px;
+	color:#666;
+}
+.add_card_content span.sp_style_3, .add_alipay_content span.sp_style_3{
+	position:absolute;
+	top:30px;
+	right:20px;
+}
+.add_card_content span.sp_style_3 a, .add_alipay_content span.sp_style_3 a{
+	color:#26bfc1;
+}
+/** 借记卡 **/
+.recharge_bank{
+
+}
+.bank_list ul li{
+	float:left;
+	width:196px;
+	height:63px;
+	margin:0 2px 3px 0;
+	border:1px solid #ddd;
+	position:relative;
+}
+.bank_list ul li i{
+	width:24px;
+	height:24px;
+	display:none;
+	background:url(../../img/pay_selcted.png) no-repeat;
+	position:absolute;
+	right:0;
+	bottom:0;
+	z-index:1;
+}
+.bank_list ul li.selected{
+	border:1px solid #26bfc1;
+}
+.bank_list_selected ul li.selected i{
+	display:block;
+}
+.bank_tab{
+	width:800px;
+	font-size:14px;
+	color:#999;
+	padding-top:27px;
+}
+.bank_tab span{
+	padding-left:22px;
+	background:url(../../img/bank_txt_icon.png) no-repeat 0 5px;
+	margin-bottom:10px;
+	display:block;
+}
+.recharge_bankcard_table table{
+	border-top:1px solid #ddd;
+	border-right:1px solid #ddd;
+}
+.recharge_bankcard_table table tr td{
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	border-left:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+	font-size:14px;
+}
+.direction_txt{
+	padding:30px 0 0 0;
+}
+.direction_txt p{
+	padding-left:10px;
+	line-height:25px;
+	background:url(../../img/bank_p_icon.png) no-repeat 0 12px;
+}
+
+/**支付弹窗**/
+
+.pop_content h2.passward{
+	margin-top:62px;
+}
+.pop_content .pay_wd{
+	text-align:center;
+	letter-spacing:2em;
+	margin-top:20px;
+	width:320px;
+	padding-left:0;
+}
+.pop_content .Confirm{
+	margin-top:40px;
+	width:198px;
+}
+
+/*withdraw_rule*/
+.right_top .return{
+	height:20px;
+	font-size:14px;
+	position:absolute;
+	top:3px;
+	right:0;
+}
+.right_top .return a{
+	color:#26bfc1;	
+}
+.withdraw_rule{
+}
+.withdraw_rule p{
+	line-height:26px;
+	color:#666;
+	font-size:14px;
+}
+
+/** 微信支付 **/
+.weixin_pay_bg{
+	width:130px;
+	height:130px;
+	padding:13px;
+	display:block;
+	overflow:hidden;
+	margin:10px auto 22px;
+	background:url(../../img/weixin_pay_bg.png) no-repeat center center;
+}
+.weixin_pay_bg img{
+	width:100%;
+}
+.weixin_pay_txt{
+	height:31px;
+	line-height:31px;
+	padding-left:335px;
+	background:url(../../img/weixin_pay_icon.png) no-repeat 290px 0;
+	font-size:16px;
+}

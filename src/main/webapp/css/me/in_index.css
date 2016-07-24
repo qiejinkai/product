@@ -1,0 +1,37 @@
+/*
+ *张展
+ *2015-10-14
+ *发起人主页
+ */
+ 
+
+.in_top{
+	padding-left:93px;
+	margin:75px 0 50px;
+	position:relative;
+}
+.in_top_img{
+	width:70px;
+	height:70px;
+	overflow:hidden;
+	position:absolute;
+	left:0;
+	top:5px;
+	border-radius:50%;
+}
+.in_top_img img{
+	width:100%;
+}
+.in_top h2{
+	font-size:20px;
+	padding-bottom:10px;
+}
+.in_top p{
+	font-size:14px;
+	color:#999;
+	line-height:22px;
+	height:22px;
+}
+.me_pro_title_nav a{
+	margin-right:45px;
+}

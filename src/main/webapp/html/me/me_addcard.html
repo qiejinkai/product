@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>首页</title>
+<link rel="stylesheet" type="text/css" href="../../css/reset.css" />
+<link rel="stylesheet" type="text/css" href="../../css/me/me_left.css" />
+<link rel="stylesheet" type="text/css" href="../../css/me/me_withdraw.css" />
+<script type="text/javascript" src="../../js/jquery.mini.js"></script>
+<script type="text/javascript" src="../../js/jquery.select.js"></script>
+
+</head>
+<body>
+<!--header-->
+<div id="header">
+	<div class="header">
+    	<a class="logo" href="/"></a>
+        <div class="header_r">
+        	<div class="header_search">
+            	<input type="text" class="search_text" />
+                <input type="button" class="header_btn" />
+            </div>
+            <div class="header_login" style="display:none;">
+            	<a>注册</a>
+                <a>登录</a>            	
+            </div>
+            <div class="header_user">
+            	<div class="header_logo">
+                	<em>
+                    	<img src="../img/default_logo.png" />                        
+                    </em>
+                    <i>89</i>
+                    <span>
+                    	高小明
+                    </span>
+                </div>
+                <div class="user_nav" id="user_nav">
+                	<em></em>
+                	<ul>
+                    	<li><a>我发起的</a></li>
+                        <li><a>我支持的</a></li>
+                        <li><a>我的消息</a></li>
+                        <li><a>个人资料</a></li>
+                        <li><a>安全退出</a></li>
+                	</ul>
+                </div>
+                <script>
+                	$(function(){
+						$('.header_logo').hover(function(){
+							$('#user_nav').show();							
+							});
+							$('#user_nav').bind("mouseleave",function(){
+							$('#user_nav').hide();							
+							});
+						
+						});
+                </script>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<!--header_nav-->
+<div id="header_nav">
+	<div class="header_nav">
+    	<em>
+            <a>首页</a>
+            <a class="selected" id="more_porject">浏览项目</a>
+            <a>发起项目</a>
+            <a class="last">帮助中心</a>
+        </em>
+        <span>客户电话：400-086-4896</span>
+        <div class="user_nav" id="more_porject_ul">
+                	<em></em>
+                	<ul>
+                    	<li><a>武侠出版</a></li>
+                        <li><a>现代都市</a></li>
+                        <li><a>玄幻奇幻</a></li>
+                        <li><a>校园青春</a></li>
+                        <li><a>网络英雄</a></li>
+                	</ul>
+       </div>
+       
+        <script>
+                	$(function(){
+						$('#more_porject').hover(function(){
+							$('#more_porject_ul').show();							
+							});
+							$('#more_porject_ul').bind("mouseleave",function(){
+							$('#more_porject_ul').hide();							
+							});
+						
+						});
+                </script>
+    </div>
+</div>
+
+<div class="warp">
+	<!--  me_left  -->
+    <div class="me_left">
+		<h2>项目</h2>
+		<ul>
+			<li><a>我发起的</a></li>
+			<li class="selected"><a>我支持的</a></li>
+			<li><a>我收藏的</a></li>
+		</ul>
+		<h2>管理</h2>
+		<ul>
+			<li><a>账户概况</a></li>
+			<li><a>资金管理</a></li>
+			<li><a>个人资料</a></li>
+			<li><a>安全认证</a></li>
+			<li><a>收货地址</a></li>
+            <li><a>我的消息</a></li>
+		</ul>
+	</div>
+    <!-- end -->
+    <!--  me_right  -->
+    <div class="me_right">
+    	<div class="right_top">
+        	<h1>提现账户</h1>
+            <span class="old"><a>查看提现规则</a></span>
+        </div>
+        <div class="add_card_content">
+        	<h2>我的银行卡</h2>
+			<ul>
+				<li><span>招商银行借记卡</span><br><span class="sp_style_2">账号：<em>6225**********0019</em></span><span class="sp_style_3"><a>解绑</a></span></li>
+				<li><span>招商银行借记卡</span><br><span class="sp_style_2">账号：<em>6225**********0019</em></span><span class="sp_style_3"><a>解绑</a></span></li>
+			</ul>
+			<div style="clear:both;"></div>
+        </div>
+        <div class="add_alipay_content">
+        	<h2>我的支付宝</h2>
+			<ul>
+				<li><span>有明月</span><br><span class="sp_style_2">账号名：<em>you*****@126.com</em></span><span class="sp_style_3"><a>解绑</a></span></li>
+				<li><span>有明月2</span><br><span class="sp_style_2">账号名：<em>you*****@126.com</em></span><span class="sp_style_3"><a>解绑</a></span></li>
+			</ul>
+			<div style="clear:both;"></div>
+        </div>
+        <!-- 选择提现方式  -->
+        <div class="bank_content">
+			<div class="bank_change_tit">
+				<span class="selected" rel="1"><a>添加支付宝</a></span>
+				<span rel="2"><a>添加银行卡</a></span>
+			</div>
+            <div class="content" style="display:block;">
+                <div class="recharge_inp_key">
+                    <label>姓名：</label>
+                    <input class="form_text" type="text" name="姓名" placeholder="请输入真实姓名">
+                </div>
+                <div class="recharge_inp_key">
+                    <label>身份证号：</label>
+                    <input class="form_text" type="text" name="身份证号" placeholder="请输入真实的身份证号码">
+                </div>
+                <div class="recharge_inp_key">
+                    <label>支付宝账号：</label>
+                    <input class="form_text" type="text" name="支付宝账号" placeholder="请输入正确的支付宝账号">
+                </div>
+                <div class="recharge_btn_box">               
+                	<input class="form_btn" type="button" value="确认充值">
+                </div>
+            </div>
+			<div class="content" style="display:none;">
+                <div class="recharge_inp_key">
+                    <label>姓名：</label>
+                    <input class="form_text" type="text" name="姓名" placeholder="请输入真实姓名">
+                </div>
+                <div class="recharge_inp_key">
+                    <label>身份证号：</label>
+                    <input class="form_text" type="text" name="身份证号" placeholder="请输入真实的身份证号码">
+                </div>
+                <div class="recharge_inp_key">
+                    <label>银行卡号：</label>
+                    <input class="form_text" type="text" name="银行卡号" placeholder="请输入银行卡卡号">
+                </div>
+                <div class="recharge_inp_key">
+                    <label>开户行城市：</label>
+                    <select class="form_select province" name="province" elwidth='139' itemWidth="136" rowCount="8">
+                        <option value="">请选择省份</option>
+                        <option>充值</option>
+                        <option>提现</option>
+                    </select>
+                    <select class="form_select province" name="province" elwidth='139' itemWidth="136" rowCount="8">
+                        <option value="">请选择城市</option>
+                        <option>充值</option>
+                        <option>提现</option>
+                    </select>
+                </div>
+                <div class="recharge_inp_key">
+                    <label>开户行名称：</label>
+                    <input class="form_text" type="text" name="开户行名称" placeholder="请输入开户行名称">
+                </div>
+            	<div class="recharge_btn_box">               
+                	<input class="form_btn" type="button" value="确认充值">
+                </div>
+			</div>
+            <!--add_card_txt_1  end -->
+            
+            
+        </div>
+        <!-- end -->
+
+    </div>
+    <!-- end -->
+
+</div>
+
+<!--footer -->
+<div id="footer">
+	<div class="footer_nav">
+    	<a>关于我们</a>
+        <a>新手指引</a>
+        <a>合作伙伴</a>
+        <a class="last">隐私保护</a>
+        <span>浙ICP备15004899号-1  |  咪咕数字传媒有限公司所有</span>    
+    </div>
+</div>
+</body>
+</html>

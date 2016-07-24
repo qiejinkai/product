@@ -21,12 +21,12 @@
 
 			<c:forEach items="${users }" var="user">
 				<tr>
-					<td>${user.value.objectId }</td>
-					<td><a href="${user.value.phone}">${user.value.phone }</a></td>
-					<td>${user.value.nick }</td>
-					<td>${user.value.email }</td>
+					<td>${user.uid }</td>
+					<td><a href="${user.uid}">${user.phone }</a></td>
+					<td>${user.nick }</td>
+					<td>${user.email }</td>
 					<td>
-			<a href="${user.value.phone }/delete">删除</a></td>
+			<a href="${user.uid }/delete">删除</a></td>
 				</tr>
 			</c:forEach>
 		</tbody>

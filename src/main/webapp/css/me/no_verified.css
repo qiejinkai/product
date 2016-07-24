@@ -1,0 +1,67 @@
+/*
+ *张展
+ *2015-10-12
+ *左边导航样式
+ */
+ 
+ 
+/**********  me_left  ***********/
+.msg_options{
+	overflow:hidden;
+	padding:0 0 30px;
+	border-bottom:1px solid #e7e7e7;
+}
+.msg_options .form_checkbox{
+	float:left;
+	margin-top:2px;
+}
+.msg_options span{
+	float:left;
+	margin:0 10px 0 10px;
+	font-size:14px;
+}
+.msg_options span.checked{
+	color:#26bfc1;
+}
+.msg_options span.right_tol{
+	float:right;
+	font-size:14px;
+	margin:0;
+}
+.msg_options span.right_tol i{
+	font-size:14px;
+	padding:0 2px;
+}
+.msg_options span.right_tol em{
+	font-size:14px;
+	color:#26bfc1;
+	padding:0 2px;
+}
+.msg_list{
+	overflow:hidden;
+	position:relative;
+	border-bottom:1px dashed #e7e7e7;
+	padding:25px 0;
+}
+.msg_list .form_checkbox{
+	position:absolute;
+	left:0;
+	top:29px;
+}
+.msg_list p{
+	font-size:14px;
+	float:left;
+	color:#333;
+	margin-left:35px;
+	line-height:22px;
+}
+.msg_list p.selected{
+	color:#999;
+}
+.msg_list span{
+	float:right;
+	font-size:14px;
+}
+.me_right .page{
+	padding:30px 0 35px;
+}

@@ -7,10 +7,10 @@
 <body>
 	<h2>查看用户</h2>
 	
-		id:${user.objectId}<br/>
+		id:${user.uid}<br/>
 		nick:${user.nick }<br/>
 		phone:${user.phone }<br/>
 		email:${user.email }<br/>
-	<a href="${user.phone }/update">修改</a>
+	<a href="${user.uid }/update">修改</a>
 </body>
 </html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>首页</title>
+<link rel="stylesheet" type="text/css" href="../../css/reset.css" />
+<link rel="stylesheet" type="text/css" href="../../css/me/me_left.css" />
+<link rel="stylesheet" type="text/css" href="../../css/me/me_info.css" />
+<script type="text/javascript" src="../../js/jquery.mini.js"></script>
+<script type="text/javascript" src="../../js/jquery.select.js"></script>
+</head>
+<body>
+<!--header-->
+<div id="header">
+	<div class="header">
+    	<a class="logo" href="/"></a>
+        <div class="header_r">
+        	<div class="header_search">
+            	<input type="text" class="search_text" />
+                <input type="button" class="header_btn" />
+            </div>
+            <div class="header_login" style="display:none;">
+            	<a>注册</a>
+                <a>登录</a>            	
+            </div>
+            <div class="header_user">
+            	<div class="header_logo">
+                	<em>
+                    	<img src="../img/default_logo.png" />                        
+                    </em>
+                    <i>89</i>
+                    <span>
+                    	高小明
+                    </span>
+                </div>
+                <div class="user_nav" id="user_nav">
+                	<em></em>
+                	<ul>
+                    	<li><a>我发起的</a></li>
+                        <li><a>我支持的</a></li>
+                        <li><a>我的消息</a></li>
+                        <li><a>个人资料</a></li>
+                        <li><a>安全退出</a></li>
+                	</ul>
+                </div>
+                <script>
+                	$(function(){
+						$('.header_logo').hover(function(){
+							$('#user_nav').show();							
+							});
+							$('#user_nav').bind("mouseleave",function(){
+							$('#user_nav').hide();							
+							});
+						
+						});
+                </script>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<!--header_nav-->
+<div id="header_nav">
+	<div class="header_nav">
+    	<em>
+            <a>首页</a>
+            <a class="selected" id="more_porject">浏览项目</a>
+            <a>发起项目</a>
+            <a class="last">帮助中心</a>
+        </em>
+        <span>客户电话：400-086-4896</span>
+        <div class="user_nav" id="more_porject_ul">
+                	<em></em>
+                	<ul>
+                    	<li><a>武侠出版</a></li>
+                        <li><a>现代都市</a></li>
+                        <li><a>玄幻奇幻</a></li>
+                        <li><a>校园青春</a></li>
+                        <li><a>网络英雄</a></li>
+                	</ul>
+       </div>
+       
+        <script>
+                	$(function(){
+						$('#more_porject').hover(function(){
+							$('#more_porject_ul').show();							
+							});
+							$('#more_porject_ul').bind("mouseleave",function(){
+							$('#more_porject_ul').hide();							
+							});
+						
+						});
+                </script>
+    </div>
+</div>
+
+<div class="warp">
+	<!--  me_left  -->
+    <div class="me_left">
+		<h2>项目</h2>
+		<ul>
+			<li><a>我发起的</a></li>
+			<li class="selected"><a>我支持的</a></li>
+			<li><a>我收藏的</a></li>
+		</ul>
+		<h2>管理</h2>
+		<ul>
+			<li><a>账户概况</a></li>
+			<li><a>资金管理</a></li>
+			<li><a>个人资料</a></li>
+			<li><a>安全认证</a></li>
+			<li><a>收货地址</a></li>
+            <li><a>我的消息</a></li>
+		</ul>
+	</div>
+    <!-- end -->
+    <!--  me_right  -->
+    <div class="me_right">
+        <h1>个人资料</h1>
+        <!-- 基本信息  -->
+        <div class="me_info_box">
+        	<label class="title">基本信息</label>
+            <div class="right_item">
+            	<div class="list_box list_top">
+                	<div class="me_header_img">
+                    	<img src="../../img/default_user.png">
+                    </div>
+                    <input class="form_btn form_btn_load" type="button" value="上传图片">
+                    <span class="tip_txt">不超过200KB，建议尺寸150px*150px</span>
+                </div>
+                <div class="list_box">
+                	<label>昵称：</label>
+                    <input class="form_text form_text_1" type="text" placeholder="花花公子">
+                </div>
+                <div class="list_box">
+                	<label>性别：</label>
+                    <input class="form_radio" name="sex" type="radio" value="M" checked>
+                    <em>男</em>
+                    <input class="form_radio" name="sex" type="radio" value="F">
+                    <em>女</em>
+                </div>
+                <div class="list_box">
+                	<label>手机：</label>
+                    <span class="info disabled">19645846859</span>
+                    <a class="mn">修改</a>
+                </div>
+                <div class="list_box">
+                	<label>邮箱：</label>
+                    <span class="info">未设置</span>
+                    <a class="mn">绑定</a>
+                </div>
+                <input class="form_btn me_form_btn" type="button" value="保 存">
+            </div>
+        </div>
+        <!-- end -->
+        <!-- 最近工作经历  -->
+        <div class="me_info_box">
+        	<label class="title">最近工作经历</label>
+            <div class="right_item">
+                <div class="list_box">
+                	<label>所在单位：</label>
+                    <input class="form_text form_text_2" type="text" placeholder="北京方丁易筹">
+                </div>
+                <div class="list_box">
+                	<label>职位名称：</label>
+                    <input class="form_text form_text_2" type="text" placeholder="花花公子">
+                </div>
+                <div class="list_box city-select">
+                	<label for="">所在地点：</label>
+                    <select class="form_select province" name="province" elwidth='167' itemWidth="165" rowCount="8">
+                    	<option value="">请选择省份</option>
+                    </select>
+                    <select class="form_select province" name="province" elwidth='167' itemWidth="165" rowCount="8">
+                    	<option value="">请选择城市</option>
+                    </select>
+                    <input class="form_text form_text_3" type="text" placeholder="花花公子">
+                </div>
+                
+                <div class="list_box list_box_check">
+                	<label>所在行业：</label>
+                    <ul>
+                        <li>
+                            <input type="checkbox" class="form_checkbox" value="电子商务">
+                            <span class="text_checkbox">电子商务</span>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="form_checkbox" value="网络媒体" checked="">
+                            <span class="text_checkbox checked">网络媒体</span>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="form_checkbox" value="网络视频">
+                            <span class="text_checkbox">网络视频</span>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="form_checkbox" value="文化娱乐">
+                            <span class="text_checkbox">文化娱乐</span>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="form_checkbox" value="物流仓储" checked="">
+                            <span class="text_checkbox checked">物流仓储</span>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="form_checkbox" value="移动互联网">
+                            <span class="text_checkbox">移动互联网</span>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="form_checkbox" value="网络服务">
+                            <span class="text_checkbox">网络服务</span>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="form_checkbox" value="农业">
+                            <span class="text_checkbox">农业</span>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="form_checkbox" value="O2O">
+                            <span class="text_checkbox">O2O</span>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="form_checkbox" value="金融">
+                            <span class="text_checkbox">金融</span>
+                        </li>
+                    </ul>
+                </div>
+                <input class="form_btn me_form_btn" type="button" value="保 存">
+            </div>
+        </div>
+        <!-- end -->
+        <!-- 教育背景  -->
+        <div class="me_info_box">
+        	<label class="title">教育背景</label>
+            <div class="right_item">
+                <div class="list_box city-select">
+                	<label>最高学历：</label>
+                    <select class="form_select province" name="province" elwidth='195' itemWidth="193" rowCount="8">
+                    	<option value="">请选择</option>
+                    </select>
+                </div>
+                <div class="list_box">
+                	<label>学校名称：</label>
+                    <input class="form_text form_text_2" type="text" placeholder="花花公子">
+                </div>
+                <div class="list_box">
+                	<label>就读时间：</label>
+                    <input class="form_text form_text_4" type="text">
+                    <i>--</i>
+                    <input class="form_text form_text_4" type="text">
+                </div>
+                <div class="list_box">
+                	<label>所学专业：</label>
+                    <input class="form_text form_text_2" type="text" placeholder="花花公子">
+                </div>
+                <input class="form_btn me_form_btn" type="button" value="保 存">
+            </div>
+        </div>
+        <!-- end -->
+        <!-- 教育背景  -->
+        <div class="me_info_box">
+        	<label class="title">教育背景</label>
+            <div class="right_item">
+                <div class="list_box">
+                	<label>最高学历：</label>
+                    <textarea class="form_textarea" placeholder="请输入您的个人或所在机构简介，将呈现在发起人主页中，帮助支持者了解项目信息。例：****是一家以生产**产品为主的上市公司，主要生产销售**、***、****等家电系列产品。多年来，公司获得了约**多项国家专利，通过了多项国际认证；**公司凭借其优良的产品品质和良好的售后服务深受广大消费者喜爱和好评，
+同时也赢得业内人士的尊重和敬仰。"></textarea>
+                </div>
+                <input class="form_btn me_form_btn" type="button" value="保 存">
+            </div>
+        </div>
+        <!-- end -->
+    </div>
+    <!-- end -->
+
+</div>
+
+<!--footer -->
+<div id="footer">
+	<div class="footer_nav">
+    	<a>关于我们</a>
+        <a>新手指引</a>
+        <a>合作伙伴</a>
+        <a class="last">隐私保护</a>
+        <span>浙ICP备15004899号-1  |  咪咕数字传媒有限公司所有</span>    
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>首页</title>
+<link rel="stylesheet" type="text/css" href="../../css/reset.css" />
+<link rel="stylesheet" type="text/css" href="../../css/order/order.css" />
+<link rel="stylesheet" type="text/css" href="../../css/order/order_pay.css" />
+<script type="text/javascript" src="../../js/jquery.mini.js"></script>
+</head>
+<body>
+<div class="warp">
+	<h1>支付</h1>
+	<div class="pay_detail">
+    	<div class="pay_detail_item">
+        	<label>项目名称：</label>
+            <span>为700名学生建教室</span>
+            <div class="right">本订单金额：<em>10000</em>元</div>
+        </div>
+        <div class="pay_detail_item">
+        	<label>订单编号：</label>
+            <span>01254782252150</span>
+            <a class="cur">订单详情</a>
+        </div>
+        <div class="order_detail_box">
+        	<p><label>回报内容：</label><span>01.回报内容描述订单号码20120459605959606960596。<br>02.众筹金融圣诞狂欢夜party项目简介众筹参与金融就会圣诞夜荣获联网金融社交人脉。<br>03.圣诞礼物精品礼品众筹好项目参与机会有限加入金融咖啡俱乐部礼物精品礼品众筹好项目参与礼物精品礼品众筹好项目参与机会有限加入金融。<br>04.乐部礼物精品物精品礼品众筹好项目参与礼物精品礼品众筹好项目参与机会有限加入。</span></p>
+            <p><label>下单时间：</label><span>2015-08-10 18:18:12</span></p>
+        </div>
+        <script type="text/javascript"> 
+			$(document).ready(function(){
+				$(".pay_detail_item a.cur").click(function(){
+					$(".pay_detail_item a.cur").toggleClass("selected");
+					$(".order_detail_box").slideToggle(500);
+				});
+			});
+		</script>
+    </div>
+    <div class="pay_ways">
+    	<h2>选择支付方式</h2>
+        <div class="pay_ways_item">
+        	<label>账户余额支付：</label>
+            <div class="pay_bank_img selected">账户余额<em>1000</em>元<i></i></div>
+            <span>余额不足，请使用其他支付方式付款请<a>充值</a>后再付款</span>
+        </div>
+        <div class="pay_ways_item">
+        	<label>支付宝支付：</label>
+            <div class="pay_bank_img"><a><img src="../../img/bankimg/pay_img_01.png"></a></div>
+        </div>
+        <div class="pay_ways_item">
+        	<label>财付通支付：</label>
+            <div class="pay_bank_img"><a><img src="../../img/bankimg/pay_img_02.png"></a></div>
+        </div>
+        <div class="pay_ways_item">
+        	<label>银行卡快捷支付：</label>
+            <div class="pay_bank_img"><a><img src="../../img/bankimg/pay_img_03.png"></a></div>
+        </div>
+        <div class="pay_ways_tip">
+        	声明：当前仅支持中国银行，中国农业银行，中国建设银行，中国工商银行，光大银行，民生银行和平安银行的借记卡。更多银行开放中。
+        </div>
+        <div class="pay_ways_item">
+        	<label class="l_list">网上银行支付：</label>
+            <div class="pay_bank_list">
+            	<ul>
+                    <li rel='1' value="ICBC">
+                        <a><img src="../../img/bankimg/pay_img_05.png" border="0" width="228" height="58"></a>
+                    </li>
+                    <li rel='2' value="ABC">
+                        <a><img src="../../img/bankimg/pay_img_06.png" border="0" width="228" height="58"></a>
+                    </li>
+                    <li rel='3' value="CCB">
+                        <a><img src="../../img/bankimg/pay_img_04.png" border="0" width="228" height="58"></a>
+                    </li>
+                    <li rel='4' value="BOC">
+                        <a><img src="../../img/bankimg/pay_img_08.png" border="0" width="228" height="58"></a>
+                    </li>
+                    <li rel='5' value="BOCM">
+                        <a><img src="../../img/bankimg/pay_img_09.png" border="0" width="228" height="58"></a>
+                    </li>
+                    <li rel='6' value="CITIC">
+                        <a><img src="../../img/bankimg/pay_img_07.png" border="0" width="228" height="58"></a>
+                    </li>
+                    <li rel='7' value="CMBC">
+                        <a><img src="../../img/bankimg/pay_img_11.png" border="0" width="228" height="58"></a>
+                    </li>
+                    <li rel='8' value="CMB">
+                        <a><img src="../../img/bankimg/pay_img_12.png" border="0" width="228" height="58"></a>
+                    </li>
+                    <li rel='9' value="CEB">
+                        <a><img src="../../img/bankimg/pay_img_10.png" border="0" width="228" height="58"></a>
+                    </li>
+                    <li rel='10' value="CIB">
+                        <a><img src="../../img/bankimg/pay_img_14.png" border="0" width="228" height="58"></a>
+                    </li>
+                    <li rel='11' value="SPDB">
+                        <a><img src="../../img/bankimg/pay_img_15.png" border="0" width="228" height="58"></a>
+                    </li>
+                    <li rel='12' value="HXB">
+                        <a><img src="../../img/bankimg/pay_img_13.png" border="0" width="228" height="58"></a>
+                    </li>
+                    <li rel='13' value="PSBC">
+                        <a><img src="../../img/bankimg/pay_img_17.png" border="0" width="228" height="58"></a>
+                    </li>
+                    <li rel='14' value="SDB">
+                        <a><img src="../../img/bankimg/pay_img_16.png" border="0" width="228" height="58"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="pay_ways_tip">
+        	声明：当前仅支持中国银行，中国农业银行，中国建设银行，中国工商银行，光大银行，民生银行和平安银行的借记卡。更多银行开放中。
+        </div>
+    </div>
+</div>
+
+<!--  弹窗 -->
+<div class="fix_grey_bg" style="display:block;"></div>
+<div class="pop_wrap" style="display:block;">
+	<div class="pop_top">
+    	<h2>提示</h2>
+        <a class="close"></a>
+    </div>
+    <div class="pop_content">
+        <h3>请在新打开的页面完成支付，<br>支付成功前请不要关闭或刷新此窗口。</h3>
+        <a class="form_btn">失败,重新支付</a>
+        <a class="form_btn close">支付成功</a>
+    </div>
+</div>
+<script>
+  $(function(){
+	  $('.close').click(function(){
+		  $('.fix_grey_bg').hide();
+		  $('.pop_wrap').hide();
+		  });
+	  });
+</script>
+
+<!--right_window end-->
+</body>
+</html>
