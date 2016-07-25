@@ -68,11 +68,15 @@
     </select>  	
     
     <select id="selectUser" parameterType="long" resultType="User">  
-        SELECT * from User WHERE uid=#{id}  ;
+        SELECT * FROM User WHERE uid=#{id}  ;
     </select>     
     
     <select id="selectUserList"  resultType="User" >  
-        SELECT * from User   ;
+        SELECT * FROM User   ;
+    </select>      
+    
+    <select id="selectUserByAccount" parameterType="string"  resultType="User" >  
+        SELECT * FROM User WHERE phone=#{account} OR email=#{account} LIMIT 1  ;
     </select>  
     
     <update id="updateUser" parameterType="user">

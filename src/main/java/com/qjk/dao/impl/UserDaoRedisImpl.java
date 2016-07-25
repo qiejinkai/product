@@ -13,7 +13,7 @@ import com.qjk.dao.IUserDao;
 import com.qjk.data.User;
 
 @Repository
-public class UserDaoRedisImpl extends AbstractBaseRedisDao<String, User> implements IUserDao {
+public class UserDaoRedisImpl extends AbstractBaseRedisDao<String, User>  {
 
 	public void addUser( final User user) {
 		

@@ -14,8 +14,8 @@
 <script type="text/javascript" src="js/jquery.superslide.js"></script>
 </head>
 <body>
-<!--header
-<jsp:include page="/WEB-INF/jsp/header.jsp"/>-->
+<!--header-->
+<jsp:include page="/WEB-INF/jsp/header.jsp"/>
 <!--header_nav-->
 
 <!--  banner   -->

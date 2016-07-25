@@ -41,5 +41,10 @@ public class UserDaoImpl extends BaseDaoImpl<User> implements IUserDao {
 		
 		sqlSessionTemplate.update("updateUser", user);
 	}
+	
+	public User findUserByAccount(String account) {
+		
+		return sqlSessionTemplate.selectOne("selectUserByAccount",account);
+	}
 
 }

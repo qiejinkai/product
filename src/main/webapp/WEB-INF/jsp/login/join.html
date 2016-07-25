@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>注册</title>
+<link rel="stylesheet" type="text/css" href="../../css/reset.css" />
+<link rel="stylesheet" type="text/css" href="../../css/login/login.css" />
+<script src="../../js/jquery.mini.js"></script>
+
+</head>
+<body>
+<!--header-->
+<div class="warp" id='login_mian'>
+	<div class="login_title">
+    	<span>注册账号</span>        
+    </div>
+    <div id="login_form">
+    	<ul class="join_nav">
+        	<li rel='join_phone' class="selected"><a>手机注册</a></li>
+            <li rel='join_email'><a>邮箱注册</a></li>
+        </ul>
+        <div id="join_phone">
+            <div class="form_filed">
+                <input type="text" class="form_text" placeholder="输入手机号" />
+            </div>
+            <div class="form_filed">
+                <input type="text" class="form_text join_text" placeholder="输入图片验证码" />
+                <img class="img_code" src="http://tyhm.v2.eechou.com/api/open/user/login_code?r=0.5932440687902272" />
+            </div>
+            <div class="form_filed">
+                <input type="text" class="form_text join_text" placeholder="输入短信验证码" />
+                <input type="button" class="form_btn get_code" value="获取验证码"/>
+            </div>
+           <div class="form_filed">
+                <input type="password" class="form_text" placeholder="输入密码" />
+            </div>
+            <div class="form_filed">
+                <input type="password" class="form_text" placeholder="确认密码" />
+            </div>
+            <div class="form_filed">
+                <input type="button" class="form_btn" value="注  册"/>
+            </div>
+            <div class="form_link">
+                <input type="checkbox" class="form_checkbox" />
+                <span class="left">
+                    我同意<a>《平台服务协议》</a>
+                </span>
+                <a class="right">已有账号</a>
+            </div>
+        </div>
+        <!--join_phone-->
+        <div id="join_email" style="display:none;">
+            <div class="form_filed">
+                <input type="text" class="form_text" placeholder="输入您的常用邮箱" />
+            </div>
+            <div class="form_filed">
+                <input type="text" class="form_text join_text" placeholder="输入图片验证码" />
+                <img class="img_code" src="http://tyhm.v2.eechou.com/api/open/user/login_code?r=0.5932440687902272" />
+            </div>
+           
+            <div class="form_filed">
+                <input type="button" class="form_btn" value="注  册"/>
+            </div>
+            <div class="form_link">
+                <input type="checkbox" class="form_checkbox" />
+                <span class="left">
+                    我同意<a>《平台服务协议》</a>
+                </span>
+                <a class="right">已有账号</a>
+            </div>
+        </div>
+        <!--join_phone-->
+        
+    </div>
+</div>
+<script>
+	$(function(){
+			var ed = $('#login_form');
+			
+			$('.join_nav li',ed).bind('click',function(){
+				$(this).addClass("selected").siblings("li").removeClass("selected");
+				$('#'+$(this).attr('rel')).show().siblings('div').hide();
+				
+				});
+		});
+	
+</script>
+</body>
+</html>

@@ -15,4 +15,6 @@ public interface IUserDao {
 	public void updateUser(User user);
 	
 	public List<User> selectUsers();
+
+	public User findUserByAccount(String account);
 }
