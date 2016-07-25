@@ -16,7 +16,7 @@
         <div class="header_r">
            <c:if test="${empty user}">
             <div class="header_login" style="">
-            	<a href="/login/registe">注册</a>
+            	<a href="/login/join">注册</a>
                 <a href="/login/login">登录</a>            	
             </div>
             </c:if>

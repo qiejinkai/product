@@ -9,11 +9,13 @@
 	<typeAliases>
  		<typeAlias alias="User" type="com.qjk.data.User"/>
  		<typeAlias alias="UserOption" type="com.qjk.data.UserOption"/>
+ 		<typeAlias alias="Sms" type="com.qjk.data.Sms"/>
 	</typeAliases>
 	
 	<!-- 指定映射文件-->
 	<mappers>
 		<mapper resource="com/qjk/dao/sqlmap/user-sqlmap-mapping.xml"></mapper>
 		<mapper resource="com/qjk/dao/sqlmap/useroption-sqlmap-mapping.xml"></mapper>
+		<mapper resource="com/qjk/dao/sqlmap/sms-sqlmap-mapping.xml"></mapper>
 	</mappers> 
 </configuration>

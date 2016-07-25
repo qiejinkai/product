@@ -26,13 +26,13 @@ public class TestUserDao extends AbstractJUnit4SpringContextTests{
 	public void testUserDaoInsert(){
 		
 		User user = new User();
-		user.setNick("qiejinkai");
+		user.setNick("qiejinkai123");
 		user.setPhone("13051701098");
 		user.setEmail("qiejinkai@126.com");
 		user.setLogo("");
 		user.setPassword(DigestUtil.encodePassword("123456"));
 				
-		userDao.addUser(user);
+		UserService.addUser(user);
 		
 		System.out.println(user.getUid());
 		
@@ -42,7 +42,7 @@ public class TestUserDao extends AbstractJUnit4SpringContextTests{
 	
 	@Test
 	public void testUserDaoSelectOne(){
-		User user = userDao.findUserById(1);
+		User user = UserService.findUserById(1);
 		System.out.println(user.getNick()+","+user.getPhone()+","+user.getEmail());
 //		System.out.println(user.getOptions().size());
 //		for (UserOption option : user.getOptions()) {
