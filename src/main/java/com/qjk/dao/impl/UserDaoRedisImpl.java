@@ -9,7 +9,6 @@ import org.springframework.data.redis.serializer.RedisSerializer;
 import org.springframework.stereotype.Repository;
 
 import com.qjk.dao.AbstractBaseRedisDao;
-import com.qjk.dao.IUserDao;
 import com.qjk.data.User;
 
 @Repository
