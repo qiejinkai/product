@@ -6,13 +6,13 @@ import com.qjk.data.User;
 
 public interface IUserDao {
 	
-	public void addUser(User user);
+	public int addUser(User user);
 	
-	public void deleteUser(long id);
+	public int deleteUser(long id);
 	
 	public User findUserById(long id);
 	
-	public void updateUser(User user);
+	public int updateUser(User user);
 	
 	public List<User> selectUsers();
 

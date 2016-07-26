@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 
 import com.qjk.data.Sms;
 import com.qjk.service.ISmsService;
-import com.qjk.util.SmsUtil;
+import com.qjk.util.SmsSendHelper;
 
 @Component
 public class ScheduledTask {
@@ -34,7 +34,7 @@ public class ScheduledTask {
 
 				for (Sms sms : smsList) {
 					try {
-						sms = SmsUtil.sendSms(sms);
+						sms = SmsSendHelper.sendSms(sms);
 						smsService.updateSms(sms);
 					} catch (UnsupportedEncodingException e) {
 						logger.error(e.getMessage());

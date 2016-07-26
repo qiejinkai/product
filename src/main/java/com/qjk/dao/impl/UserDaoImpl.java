@@ -15,15 +15,15 @@ import com.qjk.data.User;
 @Repository
 public class UserDaoImpl extends BaseDaoImpl<User> implements IUserDao {
 
-	public void addUser(User user) {
+	public int addUser(User user) {
 
-		sqlSessionTemplate.insert("insertUser",user);
+		return sqlSessionTemplate.insert("insertUser",user);
 
 	}
 
-	public void deleteUser(long id) {
+	public int deleteUser(long id) {
 
-		sqlSessionTemplate.delete("deleteUser",id);
+		return sqlSessionTemplate.delete("deleteUser",id);
 
 	}
 
@@ -37,9 +37,9 @@ public class UserDaoImpl extends BaseDaoImpl<User> implements IUserDao {
 		return sqlSessionTemplate.selectList("selectUserList");
 	}
 
-	public void updateUser(User user) {
+	public int updateUser(User user) {
 		
-		sqlSessionTemplate.update("updateUser", user);
+		return sqlSessionTemplate.update("updateUser", user);
 	}
 	
 	public User findUserByAccount(String account) {

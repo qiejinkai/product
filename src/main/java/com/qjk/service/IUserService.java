@@ -7,6 +7,10 @@ import com.qjk.exception.UserException;
 
 public interface IUserService {
 	
+	User joinPhone(String phone,String password) throws UserException;
+	
+	User joinEmail(String email,String password) throws UserException;
+	
 	void addUser(User user);
 	
 	void updateUser(User user);
