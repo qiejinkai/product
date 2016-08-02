@@ -41,7 +41,7 @@
 		p:host-name="${redis.host}" p:port="${redis.port}" p:password="${redis.pass}"
 		p:pool-config-ref="poolConfig" />
 
-	<bean id="redisTemplate" class="org.springframework.data.redis.core.StringRedisTemplate">
+	<bean id="redisTemplate" class="org.springframework.data.redis.core.StringRedisTemplate" >
 		<property name="connectionFactory" ref="connectionFactory" />
 	</bean>
 	
@@ -84,16 +84,38 @@
 	 </bean> 
 
 	<!-- Session工厂-->
-	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+<!-- 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
-		<!-- mybatis配置文件 -->
+		mybatis配置文件
 		<property name="configLocation" value="classpath:mybatis.xml" />
-	</bean>
+	</bean> -->
 
 	<!-- 配置SqlSessionTemplate -->
-	<bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
+<!-- 	<bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
 		<constructor-arg name="sqlSessionFactory" ref="sqlSessionFactory" />
-	</bean>
+	</bean> -->
+	
+	<!-- hibernate -->
+
+    <bean id="hibernateSessionFactory"
+        class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+        <property name="dataSource" ref="dataSource" />
+        <property name="packagesToScan">
+            <list>
+                <value>com.qjk.data</value>
+            </list>
+        </property>
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.hbm2ddl.auto">${hibernate.hbm2ddl.auto}</prop>
+                <prop key="hibernate.dialect">${hibernate.dialect}</prop>
+                <prop key="hibernate.show_sql">${hibernate.show_sql}</prop>
+                <prop key="hibernate.format_sql">${hibernate.format_sql}</prop>
+                <prop key="hibernate.temp.use_jdbc_metadata_defaults">false</prop>
+                <prop key="hibernate.current_session_context_class">org.springframework.orm.hibernate5.SpringSessionContext</prop>
+            </props>
+        </property>
+    </bean>
 	
 	<!-- 开启面向接口编程 -->
 <!-- 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">  
@@ -102,17 +124,18 @@
     </bean>  -->
 
 
-	<!-- 开启事务注解驱动 -->
-	<!-- <tx:annotation-driven /> -->
 
-	<!-- transaction manager, use DataSourceTransactionManager -->
+	<!-- transaction manager, use org.springframework.orm.hibernate5.HibernateTransactionManager -->
 	<bean id="txManager"
-		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-		<property name="dataSource" ref="dataSource" />
+		class="org.springframework.orm.hibernate5.HibernateTransactionManager">
+		<property name="sessionFactory" ref="hibernateSessionFactory" />
 	</bean>
+	
+	<!-- 开启事务注解驱动 -->
+	 <tx:annotation-driven  transaction-manager="txManager"/>
 
 	<!-- spring declarative transaction management -->
-	<aop:config>
+<!-- 	<aop:config>
 		<aop:pointcut id="fooServiceMethods"
 			expression="execution(* com.qjk.service.impl.*.*(..))" />
 		<aop:advisor advice-ref="txAdvice" pointcut-ref="fooServiceMethods" />
@@ -124,7 +147,7 @@
 			<tx:method name="update*" propagation="REQUIRED" />
 			<tx:method name="*" rollback-for="Exception" />
 		</tx:attributes>
-	</tx:advice>
+	</tx:advice> -->
 	
 
 

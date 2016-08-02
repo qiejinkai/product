@@ -16,7 +16,7 @@ import com.qjk.util.Value;
 @Service
 public class UserServiceImpl implements IUserService {
 
-	@Resource(name = "userDaoImpl")
+	@Resource
 	private IUserDao userDao;
 
 	public void addUser(User user) {
@@ -28,6 +28,7 @@ public class UserServiceImpl implements IUserService {
 		}
 
 		userDao.addUser(user);
+
 
 	}
 

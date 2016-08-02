@@ -13,7 +13,7 @@ public abstract class AbstractBaseRedisDao<K, V> {
 	protected RedisTemplate<K, V> redisTemplate;
 
 	/**
-	 * 设置redisTemplate
+	 * redisTemplate
 	 * 
 	 * @param redisTemplate
 	 *            the redisTemplate to set
@@ -23,7 +23,7 @@ public abstract class AbstractBaseRedisDao<K, V> {
 	}
 	
     /** 
-     * 获取 RedisSerializer 
+     * 锟斤拷取 RedisSerializer 
      * <br>------------------------------<br> 
      */  
     protected RedisSerializer<String> getRedisSerializer() {  

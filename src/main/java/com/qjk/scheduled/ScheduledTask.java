@@ -12,7 +12,6 @@ import com.qjk.data.Sms;
 import com.qjk.service.ISmsService;
 import com.qjk.util.SmsSendHelper;
 
-@Component
 public class ScheduledTask {
 	
 	Logger logger= Logger.getLogger(ScheduledTask.class);

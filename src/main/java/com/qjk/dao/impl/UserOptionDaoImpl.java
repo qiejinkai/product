@@ -13,7 +13,7 @@ import com.qjk.data.UserOption;
  * @author qiejinkai
  *
  */
-@Repository
+
 public class UserOptionDaoImpl extends BaseDaoImpl<UserOption> implements IUserOptionDao {
 
 	public void addUserOption(UserOption userOption) {

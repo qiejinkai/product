@@ -2,6 +2,8 @@ package com.qjk.service;
 
 import java.util.List;
 
+import org.springframework.transaction.annotation.Transactional;
+
 import com.qjk.data.Sms;
 import com.qjk.exception.SmsException;
 

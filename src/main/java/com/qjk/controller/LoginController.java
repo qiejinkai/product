@@ -6,6 +6,7 @@ import java.util.Map;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 
+import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.context.support.WebApplicationContextUtils;
 
 import com.qjk.data.User;
 import com.qjk.exception.SmsException;
@@ -22,13 +24,13 @@ import com.qjk.service.ISmsService;
 import com.qjk.service.IUserService;
 import com.qjk.util.DigestUtil;
 import com.qjk.util.MailSendHelper;
+import com.qjk.util.TestScope;
 import com.qjk.util.Value;
 import com.qjk.util.VerifyCodeUtil;
 
-@Controller
 @RequestMapping("/login")
 public class LoginController {
-
+	
 	@Resource
 	private IUserService userService;
 	@Resource
@@ -41,6 +43,8 @@ public class LoginController {
 		if (user != null) {
 			return "redirect:/";
 		}
+//		ApplicationContext ac1 = WebApplicationContextUtils.getRequiredWebApplicationContext( request.getServletContext());
+//		ac1.getBean("testScope");
 		return "login/login";
 	}
 

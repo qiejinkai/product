@@ -57,6 +57,97 @@ public class TestSms extends AbstractJUnit4SpringContextTests{
 		smsService.updateSms(sms);
 	}
 	
+	public static void main(String[] args) {
+		A a = new A();
+		a.setName("王者");
+		a.setValue("123");
+		B b = new B();
+		b.setName("lalala");
+		b.setA(a);
+		
+		B b1 = (B)b.clone();
+		System.out.println(b.getName());
+		System.out.println(b1.getName());
+		
+		b1.setName("dododo");
+		System.out.println(b.getName());
+		System.out.println(b1.getName());
+		
+		A a1 = new A();
+		a1.setName("qiejinkai");
+		a1.setValue("2344");
+		
+		//b.setA(a1);
+		
+		b1.getA().setName("asd");
+		System.out.println(b.getA().getName());
+		System.out.println(b1.getA().getName());
+		
+		
+		
+		
+	}
 	
 	
 }
+
+class A  implements Cloneable{
+	private String name;
+	private String value;
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getValue() {
+		return value;
+	}
+	public void setValue(String value) {
+		this.value = value;
+	}
+	
+	@Override
+	protected Object clone() throws CloneNotSupportedException {
+		// TODO Auto-generated method stub
+		return super.clone();
+	}
+	
+	
+}
+
+class B implements Cloneable{
+	private String name;
+	private A a;
+	
+	@Override
+	protected Object clone() {
+		
+		B o = null;
+		
+		try {
+			o=(B)super.clone();
+			o.a=(A)a.clone();
+		} catch (CloneNotSupportedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return o;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public A getA() {
+		return a;
+	}
+	public void setA(A a) {
+		this.a = a;
+	}
+	
+}
+
+	

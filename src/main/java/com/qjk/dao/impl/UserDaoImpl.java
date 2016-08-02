@@ -12,7 +12,7 @@ import com.qjk.data.User;
  * @author qiejinkai
  *
  */
-@Repository
+
 public class UserDaoImpl extends BaseDaoImpl<User> implements IUserDao {
 
 	public int addUser(User user) {

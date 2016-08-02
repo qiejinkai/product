@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import com.qjk.util.GraphicsUtil;
 import com.qjk.util.VerifyCodeUtil;
 
-@Controller
 @RequestMapping("/image")
 public class ImageController {
 

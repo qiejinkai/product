@@ -2,9 +2,12 @@ package com.qjk.service;
 
 import java.util.List;
 
+import org.springframework.transaction.annotation.Transactional;
+
 import com.qjk.data.User;
 import com.qjk.exception.UserException;
 
+@Transactional
 public interface IUserService {
 	
 	User joinPhone(String phone,String password) throws UserException;

@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.qjk.data.User;
+import com.qjk.data.group.ValidateInPost;
 import com.qjk.service.IUserService;
 
 @Controller
@@ -46,7 +47,7 @@ public class UserController {
 	}
 	
 	@RequestMapping(value="/add",method=RequestMethod.POST)
-	public String add(@Validated User user,BindingResult result){
+	public String add(@Validated(value={ValidateInPost.class}) User user,BindingResult result){
 		if(result.hasErrors()){
 			return "user/add";
 		}

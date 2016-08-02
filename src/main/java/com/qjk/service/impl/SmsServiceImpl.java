@@ -13,9 +13,8 @@ import com.qjk.exception.SmsException;
 import com.qjk.service.ISmsService;
 import com.qjk.util.Value;
 
-@Service
+
 public class SmsServiceImpl implements ISmsService {
-	@Resource
 	private ISmsDao smsDao;
 
 	public Sms sendSms(String phone, String content) throws SmsException {

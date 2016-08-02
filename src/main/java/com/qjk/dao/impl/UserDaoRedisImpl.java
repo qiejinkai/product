@@ -11,7 +11,7 @@ import org.springframework.stereotype.Repository;
 import com.qjk.dao.AbstractBaseRedisDao;
 import com.qjk.data.User;
 
-@Repository
+
 public class UserDaoRedisImpl extends AbstractBaseRedisDao<String, User>  {
 
 	public void addUser( final User user) {
